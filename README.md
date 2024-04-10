@@ -44,7 +44,9 @@ Unsplash
 
 Note: Before we install the plugins make sure you have Node.js installed on your machine. Otherwise, the commands won’t work
 
+``` bash
 npm install
 npm run start
+```
 
 more here https://docs.uideck.com/tailwind-template
