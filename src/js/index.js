@@ -16,86 +16,86 @@ window.wow.init({
 });
 
 //========= testimonial
-const testimonial = document.querySelectorAll('.testimonial-active');
+// const testimonial = document.querySelectorAll('.testimonial-active');
 
-if(testimonial.length) {
-  tns({
-    container: '.testimonial-active',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    mouseDrag: true,
-    gutter: 0,
-    nav: false,
-    controlsText: [
-      `<svg
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        class="fill-current"
-      >
-        <path
-          d="M6.52329 10.8331L10.9933 15.3031L9.81496 16.4814L3.3333 9.99978L9.81496 3.51811L10.9933 4.69645L6.52329 9.16645L16.6666 9.16645L16.6666 10.8331L6.52329 10.8331Z"
+// if(testimonial.length) {
+//   tns({
+//     container: '.testimonial-active',
+//     items: 1,
+//     slideBy: 'page',
+//     autoplay: false,
+//     mouseDrag: true,
+//     gutter: 0,
+//     nav: false,
+//     controlsText: [
+//       `<svg
+//         width="20"
+//         height="20"
+//         viewBox="0 0 20 20"
+//         class="fill-current"
+//       >
+//         <path
+//           d="M6.52329 10.8331L10.9933 15.3031L9.81496 16.4814L3.3333 9.99978L9.81496 3.51811L10.9933 4.69645L6.52329 9.16645L16.6666 9.16645L16.6666 10.8331L6.52329 10.8331Z"
           
-        />
-      </svg>`,
-      `<svg
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        class="fill-current"
-      >
-        <path
-          d="M13.4767 9.16689L9.00671 4.69689L10.185 3.51855L16.6667 10.0002L10.185 16.4819L9.00671 15.3036L13.4767 10.8336H3.33337V9.16689H13.4767Z"
+//         />
+//       </svg>`,
+//       `<svg
+//         width="20"
+//         height="20"
+//         viewBox="0 0 20 20"
+//         class="fill-current"
+//       >
+//         <path
+//           d="M13.4767 9.16689L9.00671 4.69689L10.185 3.51855L16.6667 10.0002L10.185 16.4819L9.00671 15.3036L13.4767 10.8336H3.33337V9.16689H13.4767Z"
           
-        />
-      </svg>`,
-    ],
-  });
-}
+//         />
+//       </svg>`,
+//     ],
+//   });
+// }
 
 //============== isotope masonry js
 
-const elem = document.querySelector('.portfolio-grid');
+// const elem = document.querySelector('.portfolio-grid');
 
-const iso = new Isotope(elem, {
-  // options
-  itemSelector: '.grid-item',
-  masonry: {
-    // use outer width of grid-sizer for columnWidth
-    columnWidth: '.grid-sizer',
-  },
-});
+// const iso = new Isotope(elem, {
+//   // options
+//   itemSelector: '.grid-item',
+//   masonry: {
+//     // use outer width of grid-sizer for columnWidth
+//     columnWidth: '.grid-sizer',
+//   },
+// });
 
-const filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
-filterButtons.forEach((e) =>
-  e.addEventListener('click', () => {
-    const filterValue = event.target.getAttribute('data-filter');
-    iso.arrange({
-      filter: filterValue,
-    });
-  })
-);
+// const filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+// filterButtons.forEach((e) =>
+//   e.addEventListener('click', () => {
+//     const filterValue = event.target.getAttribute('data-filter');
+//     iso.arrange({
+//       filter: filterValue,
+//     });
+//   })
+// );
 
 //======= portfolio-btn active
-const elements = document.querySelectorAll('.portfolio-btn-wrapper button');
-for (let i = 0; i < elements.length; i++) {
-  elements[i].onclick = function () {
-    // remove class from sibling
+// const elements = document.querySelectorAll('.portfolio-btn-wrapper button');
+// for (let i = 0; i < elements.length; i++) {
+//   elements[i].onclick = function () {
+//     // remove class from sibling
 
-    let el = elements[0];
-    while (el) {
-      if (el.tagName === 'BUTTON') {
-        //remove class
-        el.classList.remove('active');
-      }
-      // pass to the new sibling
-      el = el.nextSibling;
-    }
+//     let el = elements[0];
+//     while (el) {
+//       if (el.tagName === 'BUTTON') {
+//         //remove class
+//         el.classList.remove('active');
+//       }
+//       // pass to the new sibling
+//       el = el.nextSibling;
+//     }
 
-    this.classList.add('active');
-  };
-}
+//     this.classList.add('active');
+//   };
+// }
 
 
 

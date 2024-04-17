@@ -42,7 +42,7 @@ module.exports = {
       directory: path.join(__dirname, './build'),
     },
     compress: true,
-    port: 3000,
+    port: 3002,
   },
   module: {
     rules: [
