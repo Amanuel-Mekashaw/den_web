@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer
       className="wow fadeInUp pt-14 sm:pt-20 lg:pt-[130px]"
-      data-wow-delay=".2s"
+      data-aos="fade-up"
     >
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap">

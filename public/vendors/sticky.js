@@ -1,50 +1,62 @@
-// section menu active
-function onScroll(event) {
-  const sections = document.querySelectorAll(".menu-scroll");
-  const scrollPos =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop;
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  const ud_header = document.querySelector('.header');
+  const sticky = ud_header.offsetTop;
 
-  for (let i = 0; i < sections.length; i++) {
-    const currLink = sections[i];
-    const val = currLink.getAttribute("href");
-    const refElement = document.querySelector(val);
-    const scrollTopMinus = scrollPos + 73;
-    if (
-      refElement.offsetTop <= scrollTopMinus &&
-      refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-    ) {
-      document.querySelector(".menu-scroll").classList.remove("active");
-      currLink.classList.add("active");
-    } else {
-      currLink.classList.remove("active");
-    }
+  if (window.pageYOffset > sticky) {
+    ud_header.classList.add('sticky');
+  } else {
+    ud_header.classList.remove('sticky');
   }
-}
+};
 
-window.document.addEventListener("scroll", onScroll);
-// ==== About Tabs
-const tabButtons = document.querySelectorAll(".tabButtons button");
-const tabPanels = document.querySelectorAll(".tabPanel");
+// Mobile Menu
+const menuToggler = document.querySelector('.menu-toggler');
+const menuWrapper = document.querySelector('.menu-wrapper');
 
-function showPanel(panelIndex) {
-  tabButtons.forEach(function (node) {
-    node.classList.remove(
-      "text-primary",
-      "border-primary",
-      "dark:border-primary"
-    );
-  });
-  tabButtons[panelIndex].classList.add(
-    "text-primary",
-    "dark:text-white",
-    "border-primary",
-    "dark:border-primary"
-  );
-  tabPanels.forEach(function (node) {
-    node.style.display = "none";
-  });
-  tabPanels[panelIndex].style.display = "flex";
-}
-showPanel(0);
+menuToggler.addEventListener('click', () => {
+  menuWrapper.classList.toggle('show');
+  document.body.classList.toggle('overflow-y-hidden');
+  menuToggler.querySelector('.cross').classList.toggle('hidden');
+  menuToggler.querySelector('.menu').classList.toggle('hidden');
+});
+
+//===== close navbar-collapse when a  clicked
+document.querySelectorAll('.navbar li:not(.submenu-item) a').forEach((e) =>
+  e.addEventListener('click', () => {
+    menuWrapper.classList.toggle('show');
+    document.body.classList.toggle('overflow-y-hidden');
+    menuToggler.querySelector('.cross').classList.toggle('hidden');
+    menuToggler.querySelector('.menu').classList.toggle('hidden');
+  })
+);
+
+ 
+// Sub-menu
+const submenuItems = document.querySelectorAll('.submenu-item');
+submenuItems.forEach((el) => {
+  const submenuLink = el.querySelector('a');
+  if (submenuLink) {
+    submenuLink.addEventListener('click', () => {
+      submenuLink.classList.toggle('active');
+      const submenu = el.querySelector('.submenu');
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
+    });
+  }
+});
+
+ // Document Loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // ==== darkToggler
+  const darkTogglerCheckbox = document.querySelector('#darkToggler');
+  const html = document.querySelector('html');
+
+  const darkModeToggler = () => {
+    darkTogglerCheckbox.checked ? html.classList.remove('dark') : html.classList.add('dark');
+  };
+  darkModeToggler();
+
+  darkTogglerCheckbox.addEventListener('click', darkModeToggler);
+});

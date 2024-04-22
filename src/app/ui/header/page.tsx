@@ -1,278 +1,280 @@
 import Link from "next/link";
 
 export default function Header() {
-    return (
-        <header className="header absolute top-0 left-0 w-full">
+  return (
+    <header className="header absolute top-0 left-0 w-full"
+    id="header"
+    >
+      <div
+        className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20"
+      >
         <div
-          className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20"
+          className="relative z-[99] max-w-[250px] lg:w-full xl:max-w-[350px]"
         >
+          <Link href="/" className="inline-block">
+            <img
+              src="./images/logo/logo-dark.svg"
+              alt="logo"
+              className="hidden h-[80px] dark:block"
+            />
+            <img
+              src="./images/logo/logo-light.svg"
+              alt="logo"
+              className="h-[80px] dark:hidden"
+            />
+          </Link>
+        </div>
+        <div
+          className="menu-wrapper fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent"
+        >
+          <div className="w-full self-center">
+            <nav>
+              <ul
+                className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-10 lg:space-y-0"
+              >
+                <li>
+                  <Link
+                    href="/"
+                    className="menu-scroll active inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li className="submenu-item group relative">
+                  <Link
+                    href="/about"
+                    className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                  >
+                    Company
+
+                    <span className="pl-3">
+                      <svg
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        className="fill-current"
+                      >
+                        <path
+                          d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
+                  <ul
+                    className="submenu hidden space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]"
+                  >
+                    <li>
+                      <Link
+                        href="/about"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/career"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Career at Denovo
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/partnership"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Partnership
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/about"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        founded by senior security experts
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="submenu-item group relative">
+                  <Link
+                    href="/products-overview"
+                    className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                  >
+                    Products
+
+                    <span className="pl-3">
+                      <svg
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        className="fill-current"
+                      >
+                        <path
+                          d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
+                  <ul
+                    className="submenu hidden space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]"
+                  >
+                    <li>
+                      <Link
+                        href="/products-overview"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Overview
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/denovo-core-zero-trust"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Denovo Core Zero trust
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/browser-isolation"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Browser Isolation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/data-loss-prevention"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Data Loss prevention(DLP)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/ai-powered-threat-analysis"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        AI powered Threat Analysis
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/aa-policy-gen"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        AA Policy Gen
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="submenu-item group relative">
+                  <Link
+                    href="/papers"
+                    className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                  >
+                    Resources
+
+                    <span className="pl-3">
+                      <svg
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        className="fill-current"
+                      >
+                        <path
+                          d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
+                  <ul
+                    className="submenu hidden space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]"
+                  >
+                    <li>
+                      <Link
+                        href="/papers"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        papers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/video-links"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Video links
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/video-links"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Our own webinars
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/guidelines"
+                        className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
+                      >
+                        Guide lines
+                      </Link>
+                    </li>
+                  </ul>
+                </li><li className="submenu-item group relative">
+                </li>
+              </ul>
+            </nav>
+          </div>&nbsp;&nbsp;
           <div
-            className="relative z-[99] max-w-[250px] lg:w-full xl:max-w-[350px]"
+            className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0"
           >
-            <Link href="/" className="inline-block">
-              <img
-                src="./images/logo/logo-dark.svg"
-                alt="logo"
-                className="hidden h-[80px] dark:block"
-              />
-              <img
-                src="./images/logo/logo-light.svg"
-                alt="logo"
-                className="h-[80px] dark:hidden"
-              />
+            <Link
+              href="signup.html"
+              className="w-ful whitespace-nowrap rounded bg-primary py-2 px-6 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
+            >
+              Request Demo
             </Link>
           </div>
-          <div
-            className="menu-wrapper fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent"
-          >
-            <div className="w-full self-center">
-              <nav>
-                <ul
-                  className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-10 lg:space-y-0"
-                >
-                  <li>
-                    <Link
-                      href="/"
-                      className="menu-scroll active inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="submenu-item group relative">
-                    <Link
-                      href="/about"
-                      className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                    >
-                      Company
-  
-                      <span className="pl-3">
-                        <svg
-                          width="14"
-                          height="8"
-                          viewBox="0 0 14 8"
-                          className="fill-current"
-                        >
-                          <path
-                            d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z"
-                          />
-                        </svg>
-                      </span>
-                    </Link>
-                    <ul
-                      className="submenu hidden space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]"
-                    >
-                      <li>
-                        <Link
-                          href="/about"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          About
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/contact"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Contact
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/career"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Career at Denovo
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/partnership"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Partnership
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/about"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          founded by senior security experts
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="submenu-item group relative">
-                    <Link
-                      href="/products-overview"
-                      className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                    >
-                      Products
-  
-                      <span className="pl-3">
-                        <svg
-                          width="14"
-                          height="8"
-                          viewBox="0 0 14 8"
-                          className="fill-current"
-                        >
-                          <path
-                            d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z"
-                          />
-                        </svg>
-                      </span>
-                    </Link>
-                    <ul
-                      className="submenu hidden space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]"
-                    >
-                      <li>
-                        <Link
-                          href="/products-overview"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Overview
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/denovo-core-zero-trust"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Denovo Core Zero trust
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/browser-isolation"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Browser Isolation
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/data-loss-prevention"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Data Loss prevention(DLP)
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/ai-powered-threat-analysis"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          AI powered Threat Analysis
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/aa-policy-gen"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          AA Policy Gen
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="submenu-item group relative">
-                    <Link
-                      href="/papers"
-                      className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                    >
-                      Resources
-  
-                      <span className="pl-3">
-                        <svg
-                          width="14"
-                          height="8"
-                          viewBox="0 0 14 8"
-                          className="fill-current"
-                        >
-                          <path
-                            d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z"
-                          />
-                        </svg>
-                      </span>
-                    </Link>
-                    <ul
-                      className="submenu hidden space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]"
-                    >
-                      <li>
-                        <Link
-                          href="/papers"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          papers
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/video-links"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Video links
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/video-links"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Our own webinars
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/guidelines"
-                          className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                        >
-                          Guide lines
-                        </Link>
-                      </li>
-                    </ul>
-                  </li><li className="submenu-item group relative">
-                  </li>
-                </ul>
-              </nav>
-            </div>&nbsp;&nbsp;
-            <div
-              className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0"
-            >
-              <Link
-                href="signup.html"
-                className="w-ful whitespace-nowrap rounded bg-primary py-2 px-6 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
-              >
-                Request Demo
-              </Link>
-            </div>
-          </div>
-          <div
-          class="absolute top-1/2 right-5 z-50 flex -translate-y-1/2 items-center lg:static lg:translate-y-0"
+        </div>
+        <div
+          className="absolute top-1/2 right-5 z-50 flex -translate-y-1/2 items-center lg:static lg:translate-y-0"
         >
           <label
-            for="darkToggler"
-            class="bg-gray-2 dark:bg-dark-bg z-40 relative flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-black dark:text-white md:h-14 md:w-14"
+            htmlFor="darkToggler"
+            className="bg-gray-2 dark:bg-dark-bg z-40 relative flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-black dark:text-white md:h-14 md:w-14"
           >
             <input
               type="checkbox"
               name="darkToggler"
               id="darkToggler"
-              class="sr-only"
+              className="sr-only"
               aria-label="darkToggler"
             />
             <svg
               viewBox="0 0 23 23"
-              class="h-5 w-5 stroke-current dark:hidden md:h-6 md:w-6"
+              className="h-5 w-5 stroke-current dark:hidden md:h-6 md:w-6"
               fill="none"
             >
               <path
@@ -286,7 +288,7 @@ export default function Header() {
               viewBox="0 0 25 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="hidden h-5 w-5 dark:block md:h-6 md:w-6"
+              className="hidden h-5 w-5 dark:block md:h-6 md:w-6"
             >
               <mask id="path-1-inside-1_977:1934" fill="white">
                 <path
@@ -302,15 +304,15 @@ export default function Header() {
               />
             </svg>
           </label>
-  
+
           <button
-            class="menu-toggler relative z-50 text-dark dark:text-white lg:hidden"
+            className="menu-toggler relative z-50 text-dark dark:text-white lg:hidden"
           >
             <svg
               width="28"
               height="28"
               viewBox="0 0 28 28"
-              class="cross hidden fill-current"
+              className="cross hidden fill-current"
             >
               <path
                 d="M14.0002 11.8226L21.6228 4.20001L23.8002 6.37745L16.1776 14L23.8002 21.6226L21.6228 23.8L14.0002 16.1774L6.37763 23.8L4.2002 21.6226L11.8228 14L4.2002 6.37745L6.37763 4.20001L14.0002 11.8226Z"
@@ -320,7 +322,7 @@ export default function Header() {
               width="22"
               height="22"
               viewBox="0 0 22 22"
-              class="menu fill-current"
+              className="menu fill-current"
             >
               <path
                 d="M2.75 3.66666H19.25V5.49999H2.75V3.66666ZM2.75 10.0833H19.25V11.9167H2.75V10.0833ZM2.75 16.5H19.25V18.3333H2.75V16.5Z"
@@ -328,8 +330,8 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        </div>
-      </header>
-    );
-  }
-  
+      </div>
+      <script src="../vendors/sticky.js" defer></script>
+    </header>
+  );
+}
