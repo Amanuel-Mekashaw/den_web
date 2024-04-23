@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
   useEffect(() => {
@@ -38,13 +39,7 @@ export default function Home() {
                 fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]"
                   data-wow-delay=".3s"
                 >
-                  Cyber Protection for Your
-                  {/* <!-- <span className="underline"> Business </span> --> */}
-                  <span
-                    className="txt-type underline"
-                    data-wait="3000"
-                    data-words='["Startup", "SaaS", "Business", "Agency"]'
-                  ></span>
+                  Secure Your Business with Denovo Security
                 </h1>
                 <p
                   className="wow fadeInUp mb-12 text-base text-dark-text"

@@ -2,13 +2,12 @@
 window.onscroll = function () {
   const ud_header = document.querySelector('.header');
   const sticky = ud_header.offsetTop;
-
   if (window.pageYOffset > sticky) {
     ud_header.classList.add('sticky');
   } else {
-    ud_header.classList.remove('sticky');
+    ud_header.classList.remove('sticky')
   }
-};
+}
 
 // Mobile Menu
 const menuToggler = document.querySelector('.menu-toggler');
