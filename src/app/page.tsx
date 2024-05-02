@@ -4,7 +4,6 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
   useEffect(() => {
@@ -25,21 +24,13 @@ export default function Home() {
               <div
                 className="mx-auto mb-12 max-w-[530px] text-center lg:ml-0 lg:mb-0 lg:text-left"
               >
-                <span
-                  className="wow fadeInUp mb-8 inline-block rounded-full bg-primary bg-opacity-5 py-[10px] px-5 font-heading text-base text-primary dark:bg-white dark:bg-opacity-10 dark:text-white"
-                  data-wow-delay=".2s"
-                >
-                  <span
-                    className="mr-2 inline-block h-2 w-2 rounded-full bg-primary"
-                  ></span>
-                  Denovo Security
-                </span>
+
                 <h1
-                  className="wow 
-                fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]"
+                  className="wow fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-6xl md:leading-8xl"
                   data-wow-delay=".3s"
                 >
-                  Secure Your Business with Denovo Security
+                  <span className="inline-grid">Building Trust From</span>
+                  <span className="inline-grid">Scratch.</span>
                 </h1>
                 <p
                   className="wow fadeInUp mb-12 text-base text-dark-text"
@@ -70,28 +61,11 @@ export default function Home() {
                       </svg>
                     </span>
                   </a>
-                  <a
-                    href="#about"
-                    className="inline-flex items-center rounded py-[14px] px-8 font-heading text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
-                  >
-                    <span className="pr-3">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        className="fill-current"
-                      >
-                        <path
-                          d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5608 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.934C8.00005 4.84356 8.02462 4.75482 8.07111 4.67724C8.1176 4.59966 8.18427 4.53615 8.264 4.49346C8.34373 4.45077 8.43355 4.43051 8.52389 4.43483C8.61423 4.43915 8.70171 4.46789 8.777 4.518L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z"
-                        />
-                      </svg>
-                    </span>
-                    How it Work
-                  </a>
+
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2">
+            {/* <div className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInRight relative z-30 mx-auto h-[560px] w-full max-w-[700px] lg:ml-0"
                 data-wow-delay=".3s"
@@ -168,7 +142,7 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div
@@ -288,14 +262,14 @@ export default function Home() {
             className="wow fadeInUp relative mx-auto mb-12 max-w-[620px] pt-6 text-center md:mb-20 lg:pt-16"
             data-wow-delay=".2s"
           >
-            <span className="title"> FEATURES </span>
+            
             <h2
               className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]"
             >
               Our Unique & Awesome Core Features
             </h2>
             <p className="text-base text-dark-text">
-              In today's ever-evolving threat landscape, effective cybersecurity solutions require multi-pronged approaches. <b>Denovo Security</b> offers a comprehensive suite of cybersecurity solutions that are designed to protect your business from the most advanced cyber threats.
+              In today&apos; s ever-evolving threat landscape, effective cybersecurity solutions require multi-pronged approaches. <b>Denovo Security</b> offers a comprehensive suite of cybersecurity solutions that are designed to protect your business from the most advanced cyber threats.
             </p>
           </div>
 
@@ -470,7 +444,7 @@ export default function Home() {
                     AI assisted Automatic policy generation(AAPG)
                   </h3>
                   <p className="text-base text-dark-text">
-                    Denovo AI assisted Automatic policy generation(AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
+                    Denovo AI assisted Automatic policy generation(AAPG) uses machine learning algorithms to automatically generate security policies based on your organization&apos; s needs.
                   </p>
                 </div>
               </div>

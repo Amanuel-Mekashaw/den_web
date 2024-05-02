@@ -1,5 +1,9 @@
-export default function AaPolicyGen() {
-    return (
-      <h1>AaPolicyGen</h1>
-    );
-  }
+import React from 'react';
+
+const AaPolicyGen = () => {
+  return (
+   <h1>AA</h1>
+  );
+}
+
+export default AaPolicyGen;
