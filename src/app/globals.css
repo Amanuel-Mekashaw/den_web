@@ -99,3 +99,8 @@
     @apply underline;
   }
 }
+
+.custom-filter {
+  filter: brightness(1);
+  margin-top: -50px;
+}

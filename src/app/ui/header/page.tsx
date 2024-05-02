@@ -9,7 +9,7 @@ import React from "react";
 export default function Header() {
 
   return (
-    <NavigationMenu.Root className="header absolute top-0 left-0 w-full"
+    <NavigationMenu.Root className="header top-0 left-0 w-full  data-twe-sticky-boundary"
     >
       <div
         className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20"
