@@ -120,7 +120,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/about/contact"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Contact
@@ -128,7 +128,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/career"
+                    href="/about/career"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Career at Denovo
@@ -141,7 +141,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/partnership"
+                    href="/about/partnership"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Partnership
@@ -170,7 +170,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/denovo-core-zero-trust"
+                    href="/products-overview/denovo-core-zero-trust"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Denovo Core Zero trust
@@ -178,7 +178,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/browser-isolation"
+                    href="/products-overview/browser-isolation"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     browser Isolation
@@ -186,7 +186,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/data-loss-prevention"
+                    href="/products-overview/data-loss-prevention"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Data Loss prevention(DLP)
@@ -194,7 +194,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/ai-powered-threat-analysis"
+                    href="/products-overview/ai-powered-threat-analysis"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     AI powered Threat Analysis
@@ -202,7 +202,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/aa-policy-gen"
+                    href="products-overview/aa-policy-gen"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     AI Policy Generating

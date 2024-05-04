@@ -74,7 +74,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/contact"
+                        href="/about/contact"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Contact
@@ -82,7 +82,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <NavigationMenu.Link
-                        href="/career"
+                        href="/about/career"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Career at Denovo
@@ -90,7 +90,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/partnership"
+                        href="/about/partnership"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Partnership
@@ -133,7 +133,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/denovo-core-zero-trust"
+                        href="/products-overview/denovo-core-zero-trust"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Denovo Core Zero trust
@@ -141,7 +141,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/browser-isolation"
+                        href="/products-overview/browser-isolation"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Browser Isolation
@@ -149,7 +149,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/data-loss-prevention"
+                        href="/products-overview/data-loss-prevention"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Data Loss Prevention
@@ -157,7 +157,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/ai-powered-threat-analysis"
+                        href="/products-overview/ai-powered-threat-analysis"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         AI-powered Threat Analysis
@@ -165,7 +165,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/aa-policy-gen"
+                        href="/products-overview/aa-policy-gen"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         AI-Assisted Policy Gen
