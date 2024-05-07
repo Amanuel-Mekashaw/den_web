@@ -16,13 +16,13 @@ export default function ProductsOverview() {
           <div className="flex h-full items-center justify-center">
             <div className="px-6 text-center text-white md:px-12">
               <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 style={{ lineHeight: '1.2', letterSpacing: '-1px', filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.5))', textShadow: '0 0 10px rgba(0,0,0,0.5)', }}
               >
                 Denovo Products <br />
               </h1>
               <span className='inline-grid text-2xl font-heading text-pretty'
-                data-aos="fade-down"
+                data-aos="fade-right"
                 style={{ lineHeight: '1.2', letterSpacing: '-1px', filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.5))', textShadow: '0 0 10px rgba(0,0,0,0.5)', }}
               >
                 Denovo offers a range of products that are designed to help you secure your organization's
@@ -35,6 +35,7 @@ export default function ProductsOverview() {
               <a
                 href="#features"
                 className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8"
+                data-aos="fade-right"
               >
                 Demo on Demand
                 <span className="pl-3">
@@ -131,7 +132,7 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/028.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <img src="./images/overview/core.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
                 <a href="#!">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -141,7 +142,7 @@ export default function ProductsOverview() {
             </div>
 
             <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
-              <h3 className="mb-4 text-2xl font-bold text-white">Denovo Core Zero Trust
+              <h3 className="mb-4 text-2xl font-bold text-white text-center">Denovo Core Zero Trust
               </h3>
               <p className="mb-6 text-neutral-500 dark:text-neutral-300">
                 Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat
@@ -163,8 +164,8 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/033.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <Link href="/products-overview/broswer-isolation">
+                <img src="./images/overview/browser.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <Link href="/products-overview/browser-isolation">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                   </div>
@@ -175,7 +176,7 @@ export default function ProductsOverview() {
             <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pr-6">
               <h3 className="mb-4 text-2xl font-bold text-white text-center">Browser Isolation</h3>
               <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
-                <p className='font-heading text-pretty text-xl'>
+                <p className='font-heading text-pretty text-xl' data-aos="type-right">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
                     <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
                   </svg>
@@ -214,7 +215,7 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/079.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <img src="./images/overview/data.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
                 <a href="/products-overview/data-loss-prevention">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
