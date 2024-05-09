@@ -207,7 +207,7 @@ export default function ProductsOverview() {
 
           </div>
 
-          <div className="flex flex-wrap"
+          <div className="flex flex-wrap "
             data-aos="fade-up"
 
           >
@@ -256,9 +256,66 @@ export default function ProductsOverview() {
               </ul>
             </div>
           </div>
+
+          
           <br />
         </section>
       </div>
-    </section>
+      <div className="container my-24 mx-auto md:px-6">
+        <section className="mb-32">
+          <div className="flex flex-wrap lg:flex-row-reverse"
+            data-aos="fade-up"
+          >
+            <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6" data-aos="fade-right">
+              <div
+                className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+                data-te-ripple-init data-te-ripple-color="light">
+                <img src="./images/overview/ai.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <a href="/products-overview/ai-powered-threat-analysis">
+                  <div
+                    className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6" data-aos="fade-left">
+              <h3 className="mb-4 text-2xl font-bold text-white text-center">Denovo Security AI-Powered Threat Analysis</h3>
+              <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  Detect and respond to threats in real-time using AI-powered threat analysis.
+                </p>
+                <br />
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  Enhance your security posture with advanced threat detection and response capabilities.
+                </p>
+                <br />
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  Minimize the risk of data breaches and enhancing response capabilities
+                </p>
+                <br />
+                {/* add a learnmore link */}
+                <Link href='/products-overview/ai-powered-threat-analysis'>
+                  <span className='text-primary hover:text-primary-600 text-xl'>Learn more
+                  </span>
+                </Link>
+              </ul>
+            </div>
+          </div>
+
+          
+          <br />
+        </section>
+      </div>
+    </section>    
   );
 }
