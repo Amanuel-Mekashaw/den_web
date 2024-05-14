@@ -162,7 +162,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <Link
-                    href="/products-overview"
+                    href="/products"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Overview
@@ -170,7 +170,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/products-overview/denovo-core-zero-trust"
+                    href="/products/denovo-core-zero-trust"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Denovo Core Zero trust
@@ -178,7 +178,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/products-overview/browser-isolation"
+                    href="/products/browser-isolation"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     browser Isolation
@@ -186,7 +186,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/products-overview/data-loss-prevention"
+                    href="/products/data-loss-prevention"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Data Loss prevention(DLP)
@@ -194,7 +194,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/products-overview/ai-powered-threat-analysis"
+                    href="/products/ai-powered-threat-analysis"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     AI powered Threat Analysis
@@ -202,7 +202,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="products-overview/aa-policy-gen"
+                    href="products/aa-policy-gen"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     AI Policy Generating

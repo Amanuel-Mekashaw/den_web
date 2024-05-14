@@ -9,7 +9,7 @@ import React from "react";
 export default function Header() {
 
   return (
-    <NavigationMenu.Root className="header top-0 left-0 w-full  data-twe-sticky-boundary"
+    <NavigationMenu.Root className="absolute header top-0 left-0 w-full"
     >
       <div
         className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20"
@@ -108,7 +108,7 @@ export default function Header() {
                 </NavigationMenu.List>
                 <NavigationMenu.List className="submenu-item group relative">
                   <Link
-                    href="/products-overview"
+                    href="/products"
                     className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
                     Products
@@ -125,7 +125,7 @@ export default function Header() {
                   >
                     <NavigationMenu.Item>
                       <Link
-                        href="/products-overview"
+                        href="/products"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Overview
@@ -133,7 +133,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/products-overview/denovo-core-zero-trust"
+                        href="/products/denovo-core-zero-trust"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Denovo Core Zero trust
@@ -141,7 +141,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/products-overview/browser-isolation"
+                        href="/products/browser-isolation"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Browser Isolation
@@ -149,7 +149,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/products-overview/data-loss-prevention"
+                        href="/products/data-loss-prevention"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         Data Loss Prevention
@@ -157,7 +157,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/products-overview/ai-powered-threat-analysis"
+                        href="/products/ai-powered-threat-analysis"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         AI-powered Threat Analysis
@@ -165,7 +165,7 @@ export default function Header() {
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
                       <Link
-                        href="/products-overview/aa-policy-gen"
+                        href="/products/aa-policy-gen"
                         className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                       >
                         AI-Assisted Policy Gen

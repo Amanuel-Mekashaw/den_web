@@ -146,9 +146,7 @@ export default function Home() {
             </div> */}
           </div>
         </div>
-        <div
-          className="absolute bottom-0 left-0 -z-10 h-full w-full bg-cover bg-center opacity-10 dark:opacity-40 bg-noise-pattern"
-        ></div>
+
         <div className="absolute top-0 right-0 -z-10">
           <svg
             width="1356"
@@ -256,39 +254,37 @@ export default function Home() {
           </svg>
         </div>
       </section>
+      <section className='bg-white sm:py-20 lg shadow-md'>
+
+      </section>
       {/* <!-- Container for demo purpose --> */}
       <section className="">
-        <section id="overview" className="bg-gray-200 py-10 sm:py-32">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 ">
-              <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Denovo Core Zero Trust</h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-2/3 lg:pr-6">
-                  <p className="mt-6 text-xl leading-8 text-gray-700" data-aos="fade-right">
-                    Denovo Core Zero Trust is a comprehensive cybersecurity solution that provides a holistic approach to security.
-                    <span className="block">
-                      It is designed to protect your business from the most advanced cyber threats.
-                    </span>
-                  </p>
-                </div>
-                <div className="lg:w-1/3 lg:pl-6 lg:mt-0 mt-4">
-                  <Link href="/products-overview/denovo-core-zero-trust" className="flex items-center justify-center lg:justify-start">
-                    <span className="text-blue-600 text-2xl font-semibold underline hover:no-underline">Learn More</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
+        <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r"></div>
+          <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
+              <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">Denovo Core Zero Trust</h3>
+              <p className="text-xl lg:text-2xl leading-8 text-white mt-6">
+                Denovo Core Zero Trust is a comprehensive cybersecurity solution that provides a holistic approach to security. It is designed to protect your business from the most advanced cyber threats.
+              </p>
+              <div className="flex justify-center lg:justify-start mt-6">
+                <a href="/products/denovo-core-zero-trust" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                  Learn More
+                </a>
               </div>
             </div>
-            <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
+            <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/core.jpg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
         </section>
-        <section id="overview" className="bg-gray-100 py-10 sm:py-32">
+
+
+
+
+        <section id="overview" className="bg-white py-10 sm:py-32">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -296,80 +292,17 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">AI Powered Threat Analysis</h3>
+              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">AI Powered Threat Analysis</h3>
               <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-2/3 lg:pr-6">
-                  <p className="mt-6 text-xl leading-8 text-gray-700" data-aos="fade-right">
+                  <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
                     Denovo AI Powered Threat Analysis uses machine learning algorithms to detect and respond to cyber threats in real-time.
                   </p>
-                </div>
-                <div className="lg:w-1/3 lg:pl-6 lg:mt-0 mt-4">
-                  <Link href="/products-overview/ai-powered-threat-analysis" className="flex items-center justify-center lg:justify-start">
-                    <span className="text-blue-600 text-2xl font-semibold underline hover:no-underline">Learn More</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="overview" className="bg-white py-10 sm:py-32">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Data Loss Prevention</h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-2/3 lg:pr-6">
-                  <p className="mt-6 text-xl leading-8 text-gray-700" data-aos="fade-right">
-                    Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and
-                    <span className="block">protect sensitive information from unauthorized access.</span>
-                  </p>
-                </div>
-                <div className="lg:w-1/3 lg:pl-6 lg:mt-0 mt-4">
-                  <Link href="/products-overview/data-loss-prevention" className="flex items-center justify-center lg:justify-start">
-                    <span className="text-blue-600 text-2xl font-semibold underline hover:no-underline">Learn More</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg shadow-lg" >
-                <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* <!-- Container for demo purpose --> */}
-        <section id="overview" className="bg-gray-100 py-10 sm:py-32">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-              </div>
-            </div>
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Browser Isolation
-              </h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-2/3 lg:pr-6">
-                  <p className="mt-6 text-xl leading-8 text-gray-700" data-aos="fade-right">
-                    Denovo Browser Isolation protects your organization from web-based threats by isolating
-                    <span className="block">
-                      web content in a secure container.</span>
-                  </p>
-                </div>
-                <div className="lg:w-1/3 lg:pl-6 lg:mt-0 mt-4">
-                  <Link href="/products-overview/browser-isolation" className="flex items-center justify-center lg:justify-start">
-                    <span className="text-blue-600 text-2xl font-semibold underline hover:no-underline">Learn More</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                  <div className="flex justify-center lg:justify-start mt-6">
+                    <a href="/products/ai-powered-threat-analysis" className="inline-block bg-gray-200 text-blue-600 hover:bg-white hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -377,23 +310,18 @@ export default function Home() {
         </section>
         <section id="overview" className="bg-gray-200 py-10 sm:py-32">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">AI assisted Automatic policy generation(AAPG)</h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
+            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">Data Loss Prevention</h3>
+              <div className="flex flex-col lg:flex-row items-center lg:items-start mt-6">
                 <div className="lg:w-2/3 lg:pr-6">
-                  <p className="mt-6 text-xl leading-8 text-gray-700" data-aos="fade-right">
-                    Denovo AI assisted Automatic policy generation(AAPG) uses machine learning algorithms to automatically generate security policies
-                    <span className="block">
-                      based on your organization&apos; s needs.                    </span>
+                  <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
+                    Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and protect sensitive information from unauthorized access.
                   </p>
-                </div>
-                <div className="lg:w-1/3 lg:pl-6 lg:mt-0 mt-4">
-                  <Link href="/products-overview/aa-policy-gen" className="flex items-center justify-center lg:justify-start">
-                    <span className="text-blue-600 text-2xl font-semibold underline hover:no-underline">Learn More</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                  <div className="flex justify-center lg:justify-start mt-6">
+                    <a href="/products/data-loss-prevention" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -404,6 +332,56 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* <!-- Container for demo purpose --> */}
+        <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r opacity-50 z-0"></div>
+          <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 order-2 lg:order-1">
+              <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white text-center lg:text-left">Browser Isolation</h3>
+              <p className="text-xl lg:text-2xl leading-8 text-white mt-6 text-center lg:text-left">
+                Denovo Browser Isolation protects your organization from web-based threats by isolating web content in a secure container.
+              </p>
+              <div className="flex justify-center lg:justify-start mt-6">
+                <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
+              <div className="relative overflow-hidden rounded-lg shadow-lg">
+                <img src="./images/overview/core.jpg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="overview" className="py-10 sm:py-32 bg-gradient-to-r text-white opacity-90 z-0">
+  <div className="container mx-auto flex flex-col lg:flex-row items-center">
+    <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
+      <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+      </div>
+    </div>
+    <div className="w-full lg:w-6/12 lg:pl-6">
+      <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">AI Assisted Automatic Policy Generation (AAPG)</h3>
+      <div className="flex flex-col lg:flex-row items-center lg:items-start">
+        <div className="lg:w-2/3 lg:pr-6">
+          <p className="text-xl lg:text-2xl leading-8 mt-6">
+            Denovo AI Assisted Automatic Policy Generation (AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
+          </p>
+          <div className="flex justify-center lg:justify-start mt-6">
+            <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      </section>
+      <section className='bg-white p-11 lg shadow-md'>
       </section>
     </div>
   );
