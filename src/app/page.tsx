@@ -264,7 +264,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
               <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">Denovo Core Zero Trust</h3>
-              <p className="text-xl lg:text-2xl leading-8 text-white mt-6">
+              <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
                 Denovo Core Zero Trust is a comprehensive cybersecurity solution that provides a holistic approach to security. It is designed to protect your business from the most advanced cyber threats.
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
@@ -338,7 +338,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 order-2 lg:order-1">
               <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white text-center lg:text-left">Browser Isolation</h3>
-              <p className="text-xl lg:text-2xl leading-8 text-white mt-6 text-center lg:text-left">
+              <p className="text-xl lg:text-2xl leading-8 text-white mt-6 text-center lg:text-left" data-aos="fade-right">
                 Denovo Browser Isolation protects your organization from web-based threats by isolating web content in a secure container.
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
@@ -365,7 +365,7 @@ export default function Home() {
       <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">AI Assisted Automatic Policy Generation (AAPG)</h3>
       <div className="flex flex-col lg:flex-row items-center lg:items-start">
         <div className="lg:w-2/3 lg:pr-6">
-          <p className="text-xl lg:text-2xl leading-8 mt-6">
+          <p className="text-xl lg:text-2xl leading-8 mt-6" data-aos="fade-right">
             Denovo AI Assisted Automatic Policy Generation (AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
           </p>
           <div className="flex justify-center lg:justify-start mt-6">
