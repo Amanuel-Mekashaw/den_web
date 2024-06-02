@@ -273,9 +273,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img src="./images/overview/core.jpg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+            <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
+              <div className="relative overflow-hidden rounded-lg">
+                <img src="./images/overview/new Core.drawio.svg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
@@ -287,8 +287,8 @@ export default function Home() {
         <section id="overview" className="bg-white py-10 sm:py-32">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+              <div className="relative overflow-hidden rounded-lg">
+                <img src="./images/overview/new Core.drawio.svg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
@@ -326,8 +326,8 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+              <div className="relative overflow-hidden rounded-lg">
+                <img src="./images/overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
@@ -348,30 +348,110 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <img src="./images/overview/core.jpg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+              <div className="relative overflow-hidden rounded-lg">
+                <img src="./images/overview/BW1.drawio (1).svg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
         </section>
         <section id="overview" className="py-10 sm:py-32 bg-gradient-to-r text-white opacity-90 z-0">
-  <div className="container mx-auto flex flex-col lg:flex-row items-center">
-    <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
-      <div className="relative overflow-hidden rounded-lg shadow-lg">
-        <img src="./images/overview/core.jpg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+          <div className="container mx-auto flex flex-col lg:flex-row items-center">
+            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
+              <div className="relative overflow-hidden rounded-lg">
+                <img src="./images/overview/new Core.drawio.svg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+              </div>
+            </div>
+            <div className="w-full lg:w-6/12 lg:pl-6">
+              <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">AI Assisted Automatic Policy Generation (AAPG)</h3>
+              <div className="flex flex-col lg:flex-row items-center lg:items-start">
+                <div className="lg:w-2/3 lg:pr-6">
+                  <p className="text-xl lg:text-2xl leading-8 mt-6" data-aos="fade-right">
+                    Denovo AI Assisted Automatic Policy Generation (AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
+                  </p>
+                  <div className="flex justify-center lg:justify-start mt-6">
+                    <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Hexagonal grids */}
+        <section className="bg-gray-200 py-10 lg:py-16 shadow-md">
+  <div className="flex justify-center items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Card 1 */}
+      <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+        <div className="flex flex-col items-center px-6 py-8">
+          <div className="flex-shrink-0 mb-4">
+            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold">AI Assisted Automatic Policy Generation</p>
+            <div className="flex justify-center mt-4">
+              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="w-full lg:w-6/12 lg:pl-6">
-      <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">AI Assisted Automatic Policy Generation (AAPG)</h3>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start">
-        <div className="lg:w-2/3 lg:pr-6">
-          <p className="text-xl lg:text-2xl leading-8 mt-6" data-aos="fade-right">
-            Denovo AI Assisted Automatic Policy Generation (AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
-          </p>
-          <div className="flex justify-center lg:justify-start mt-6">
-            <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-              Learn More
-            </a>
+      {/* Duplicate the card 3 more times */}
+      {/* Card 2 */}
+      <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+        <div className="flex flex-col items-center px-6 py-8">
+          <div className="flex-shrink-0 mb-4">
+            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold">Browser Isolation</p>
+            <div className="flex justify-center mt-4">
+              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Card 3 */}
+      <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+        <div className="flex flex-col items-center px-6 py-8">
+          <div className="flex-shrink-0 mb-4">
+            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold">Data Loss Prevention</p>
+            <div className="flex justify-center mt-4">
+              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Card 4 */}
+      <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+        <div className="flex flex-col items-center px-6 py-8">
+          <div className="flex-shrink-0 mb-4">
+            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold">AI Powered Threat Analysis</p>
+            <div className="flex justify-center mt-4">
+              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -379,9 +459,6 @@ export default function Home() {
   </div>
 </section>
 
-
-      </section>
-      <section className='bg-white p-11 lg shadow-md'>
       </section>
     </div>
   );
