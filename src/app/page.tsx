@@ -302,7 +302,7 @@ export default function Home() {
                   Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and protect sensitive information from unauthorized access.
                   </p>
                   <div className="flex justify-center lg:justify-start mt-6">
-                    <a href="/products/ai-powered-threat-analysis" className="inline-block bg-gray-200 text-blue-600 hover:bg-white hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    <a href="/products/data-loss-prevention" className="inline-block bg-gray-200 text-blue-600 hover:bg-white hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
                       Learn More
                     </a>
                   </div>
@@ -321,7 +321,7 @@ export default function Home() {
                   Denovo AI Powered Threat Analysis uses machine learning algorithms to detect and respond to cyber threats in real-time.
                   </p>
                   <div className="flex justify-center lg:justify-start mt-6">
-                    <a href="/products/data-loss-prevention" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    <a href="/products/ai-powered-threat-analysis" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
                       Learn More
                     </a>
                   </div>
@@ -411,7 +411,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-2xl font-bold">Browser Isolation</p>
             <div className="flex justify-center mt-4">
-              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+              <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
                 Learn More
               </a>
             </div>
@@ -427,7 +427,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-2xl font-bold">Data Loss Prevention</p>
             <div className="flex justify-center mt-4">
-              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+              <a href="/products/data-loss-prevention" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
                 Learn More
               </a>
             </div>
@@ -443,7 +443,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-2xl font-bold">AI Powered Threat Analysis</p>
             <div className="flex justify-center mt-4">
-              <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+              <a href="/products/ai-powered-threat-analysis" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
                 Learn More
               </a>
             </div>
