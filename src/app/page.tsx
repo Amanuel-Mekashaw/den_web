@@ -30,11 +30,11 @@ export default function Home() {
                   className="wow fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-6xl md:leading-8xl"
                   data-wow-delay=".3s"
                 >
-                  <span className="inline-grid">Building Trust From</span>
-                  <span className="inline-grid">Scratch.</span>
+                  <span className="inline-grid" data-aos="fade-left">Building Trust From</span>
+                  <span className="inline-grid" data-aos="fade-left">Scratch.</span>
                 </h1>
                 <p
-                  className="wow fadeInUp mb-12 text-base text-dark-text"
+                  className="wow fadeInUp mb-12 text-xl text-dark-text"
                   data-wow-delay=".4s"
                 >
                   Empower your business to thrive securely in the digital era. Seamlessly secure, manage, and innovate across Operational Technology (OT), information Technology (IT), and cloud environments. Elevate your security posture while safeguarding your most valuable assets.              </p>
@@ -254,9 +254,12 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section className='bg-white sm:py-20 lg shadow-md'>
+      <section className="bg-white px-1 py-1 sm:px-1 sm:py-1 lg shadow-md overflow-x-hidden">
+  <img src="./images/overview/core1 list.drawio.png" className="w-full h-auto object-contain mx-auto" alt="Denovo Core Zero Trust" />
+</section>
 
-      </section>
+
+
       {/* <!-- Container for demo purpose --> */}
       <section className="">
         <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
@@ -275,7 +278,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/new Core.drawio.svg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/Denovo Core Zero.drawio.png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
@@ -288,15 +291,15 @@ export default function Home() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/new Core.drawio.svg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">AI Powered Threat Analysis</h3>
+              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">Data Loss Prevention</h3>
               <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-2/3 lg:pr-6">
                   <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
-                    Denovo AI Powered Threat Analysis uses machine learning algorithms to detect and respond to cyber threats in real-time.
+                  Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and protect sensitive information from unauthorized access.
                   </p>
                   <div className="flex justify-center lg:justify-start mt-6">
                     <a href="/products/ai-powered-threat-analysis" className="inline-block bg-gray-200 text-blue-600 hover:bg-white hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
@@ -311,11 +314,11 @@ export default function Home() {
         <section id="overview" className="bg-gray-200 py-10 sm:py-32">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">Data Loss Prevention</h3>
+              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">AI Powered Threat Analysis</h3>
               <div className="flex flex-col lg:flex-row items-center lg:items-start mt-6">
                 <div className="lg:w-2/3 lg:pr-6">
                   <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
-                    Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and protect sensitive information from unauthorized access.
+                  Denovo AI Powered Threat Analysis uses machine learning algorithms to detect and respond to cyber threats in real-time.
                   </p>
                   <div className="flex justify-center lg:justify-start mt-6">
                     <a href="/products/data-loss-prevention" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
@@ -327,7 +330,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/AI Powered.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
@@ -349,7 +352,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/BW1.drawio (1).svg" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/Browser Isolation.drawio.png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
@@ -358,7 +361,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/new Core.drawio.svg" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/Denovo Core Zero.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6">
@@ -386,9 +389,7 @@ export default function Home() {
       <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
         <div className="flex flex-col items-center px-6 py-8">
           <div className="flex-shrink-0 mb-4">
-            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
-            </svg>
+          <img src="./images/overview/hexagon_logo/logo_hex_AI_AS.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold">AI Assisted Automatic Policy Generation</p>
@@ -405,9 +406,7 @@ export default function Home() {
       <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
         <div className="flex flex-col items-center px-6 py-8">
           <div className="flex-shrink-0 mb-4">
-            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
-            </svg>
+          <img src="./images/overview/hexagon_logo/logo_hexa_bI.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold">Browser Isolation</p>
@@ -423,9 +422,7 @@ export default function Home() {
       <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
         <div className="flex flex-col items-center px-6 py-8">
           <div className="flex-shrink-0 mb-4">
-            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
-            </svg>
+          <img src="./images/overview/hexagon_logo/logo_hexa_dlp.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold">Data Loss Prevention</p>
@@ -441,9 +438,7 @@ export default function Home() {
       <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
         <div className="flex flex-col items-center px-6 py-8">
           <div className="flex-shrink-0 mb-4">
-            <svg className="h-12 w-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 15a5 5 0 0 0 5-5H5a5 5 0 0 0 5 5zm.707-7.707a1 1 0 0 0-1.414-1.414a1 1 0 0 0-1.414 1.414L9 13l2.121-2.121a1 1 0 0 0-1.414-1.414z" clipRule="evenodd" />
-            </svg>
+          <img src="./images/overview/hexagon_logo/logo_hex_AI-PO.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold">AI Powered Threat Analysis</p>
