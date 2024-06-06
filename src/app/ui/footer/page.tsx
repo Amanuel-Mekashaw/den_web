@@ -130,7 +130,7 @@ export default function Footer() {
                     href="/about/career"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Career at Denovo
+                    Career At Denovo
                     {/* <!-- <span
                       className="ml-4 rounded bg-primary py-1 px-2 font-heading text-xs text-white"
                     >
@@ -172,7 +172,7 @@ export default function Footer() {
                     href="/products/denovo-core-zero-trust"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Denovo Core Zero trust
+                    Denovo Core Zero Trust
                   </Link>
                 </li>
                 <li>
@@ -180,7 +180,7 @@ export default function Footer() {
                     href="/products/browser-isolation"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    browser Isolation
+                    Browser Isolation
                   </Link>
                 </li>
                 <li>
@@ -188,7 +188,7 @@ export default function Footer() {
                     href="/products/data-loss-prevention"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Data Loss prevention(DLP)
+                    Data Loss Prevention(DLP)
                   </Link>
                 </li>
                 <li>
@@ -233,7 +233,7 @@ export default function Footer() {
                     href="/video-links"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Video links
+                    Video Links
                   </Link>
                 </li>
                 <li>
@@ -241,7 +241,7 @@ export default function Footer() {
                     href="/video-links"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Our own webinars
+                    Our Web Webinars
                   </Link>
                 </li>
                 <li>
@@ -249,7 +249,7 @@ export default function Footer() {
                     href="/guidelines"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Guide lines
+                    Guide Lines
                   </Link>
                 </li>
                 

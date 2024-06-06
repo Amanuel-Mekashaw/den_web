@@ -254,9 +254,9 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section className="px-1 py-1 sm:px-1 sm:py-1 lg overflow-x-hidden" data-aos="fade-down">
+      {/* <section className="px-1 py-1 sm:px-1 sm:py-1 lg overflow-x-hidden" data-aos="fade-down">
         <img src="./images/overview/core1LIST.drawio.png" className="h-auto object-cover mx-auto" alt="Denovo Core Zero Trust" />
-      </section>
+      </section> */}
 
 
 
@@ -278,7 +278,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/Denovo Core.drawio (1).png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/homepage overview/Denovo Core.drawio (1).png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/homepage overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
@@ -330,7 +330,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/AI POWERED.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/homepage overview/AI POWERED.drawio.png" className="w-full object-cover" alt="AI Powered Threat Analysis" />
               </div>
             </div>
           </div>
@@ -352,7 +352,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/Browser Isolation.drawio.png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/homepage overview/Browser Isolation.drawio.png" className="w-full h-auto object-cover" alt="Browser Isolation" />
               </div>
             </div>
           </div>

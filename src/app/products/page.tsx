@@ -132,8 +132,8 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="./images/overview/core.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <a href="#!">
+                <img src="./images/overview/homepage overview/Denovo Core.drawio (1).png" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <a href="/products/denovo-core-zero-trust">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                   </div>
@@ -144,17 +144,34 @@ export default function ProductsOverview() {
             <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
               <h3 className="mb-4 text-2xl font-bold text-white text-center">Denovo Core Zero Trust
               </h3>
-              <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat
-                vulputate. Ut vulputate est non quam dignissim elementum. Donec a
-                ullamcorper diam.
-              </p>
-              <p className="text-neutral-500 dark:text-neutral-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae
-                nulla saepe rerum aspernatur odio amet perferendis tempora
-                mollitia? Ratione unde magni omnis quaerat blanditiis cumque
-                dolore placeat rem dignissimos?
-              </p>
+              <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
+                <p className='font-heading text-pretty text-xl' data-aos="type-right">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  Denovo Core Zero Trust offers an all-encompassing approach to security.
+                </p>
+                <br />
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  The solution provides a holistic strategy for addressing security needs.
+                </p>
+                <br />
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  It is designed to protect businesses from the most sophisticated cyber threats.
+                </p>
+                <br />
+                {/* add a learnmore link */}
+                <Link href='/products/denovo-core-zero-trust'>
+                  <span className='text-primary hover:text-primary-600 text-xl'>Learn more
+                  </span>
+                </Link>
+              </ul>
             </div>
           </div>
 
@@ -164,8 +181,8 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="./images/overview/browser.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <Link href="/products-overview/browser-isolation">
+                <img src="./images/overview/homepage overview/Browser Isolation.drawio.png" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <Link href="/products/browser-isolation">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                   </div>
@@ -198,7 +215,7 @@ export default function ProductsOverview() {
                 </p>
                 <br />
                 {/* add a learnmore link */}
-                <Link href='/products-overview/browser-isolation'>
+                <Link href='/products/browser-isolation'>
                   <span className='text-primary hover:text-primary-600 text-xl'>Learn more
                   </span>
                 </Link>
@@ -215,8 +232,8 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="./images/overview/data.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <a href="/products-overview/data-loss-prevention">
+                <img src="./images/overview/products overview/dlpmain.drawio.png" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <a href="/products/data-loss-prevention">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                   </div>
@@ -249,7 +266,7 @@ export default function ProductsOverview() {
                 </p>
                 <br />
                 {/* add a learnmore link */}
-                <Link href='/products-overview/data-loss-prevention'>
+                <Link href='/products/data-loss-prevention'>
                   <span className='text-primary hover:text-primary-600 text-xl'>Learn more
                   </span>
                 </Link>
@@ -270,8 +287,8 @@ export default function ProductsOverview() {
               <div
                 className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init data-te-ripple-color="light">
-                <img src="./images/overview/ai.jpg" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <a href="/products-overview/ai-powered-threat-analysis">
+                <img src="./images/overview/homepage overview/Denovo Core.drawio (1).png" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <a href="/products/ai-powered-threat-analysis">
                   <div
                     className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                   </div>
@@ -304,7 +321,7 @@ export default function ProductsOverview() {
                 </p>
                 <br />
                 {/* add a learnmore link */}
-                <Link href='/products-overview/ai-powered-threat-analysis'>
+                <Link href='/products/ai-powered-threat-analysis'>
                   <span className='text-primary hover:text-primary-600 text-xl'>Learn more
                   </span>
                 </Link>
@@ -315,6 +332,55 @@ export default function ProductsOverview() {
           
           <br />
         </section>
+        <div className="flex flex-wrap "
+            data-aos="fade-up"
+
+          >
+            <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6" data-aos="fade-right">
+              <div
+                className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+                data-te-ripple-init data-te-ripple-color="light">
+                <img src="./images/overview/homepage overview/AI Assisted.drawio.png" className="w-full" alt="Louvre" data-aos="zoom-in" />
+                <a href="/products/aa-policy-gen">
+                  <div
+                    className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6" data-aos="fade-left">
+              <h3 className="mb-4 text-2xl font-bold text-white text-center">AI Assisted Automatic Policy Generation (AAPG)</h3>
+              <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  Denovo AI Assisted Automatic Policy Generation (AAPG) leverages artificial intelligence.
+                </p>
+                <br />
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  It uses machine learning algorithms to create security policies.
+                </p>
+                <br />
+                <p className='font-heading text-pretty text-xl'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                  </svg>
+                  The policies are automatically generated to fit your organization's specific needs.
+                  </p>
+                <br />
+                {/* add a learnmore link */}
+                <Link href='/products/aa-policy-gen'>
+                  <span className='text-primary hover:text-primary-600 text-xl'>Learn more
+                  </span>
+                </Link>
+              </ul>
+            </div>
+          </div>
       </div>
     </section>    
   );
