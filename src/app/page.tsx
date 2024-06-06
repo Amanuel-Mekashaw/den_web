@@ -254,8 +254,8 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section className="bg-white px-1 py-1 sm:px-1 sm:py-1 lg shadow-md overflow-x-hidden">
-        <img src="./images/overview/core1 list.drawio.png" className="w-full h-auto object-contain mx-auto" alt="Denovo Core Zero Trust" />
+      <section className="px-1 py-1 sm:px-1 sm:py-1 lg overflow-x-hidden" data-aos="fade-down">
+        <img src="./images/overview/core1LIST.drawio.png" className="h-auto object-cover mx-auto" alt="Denovo Core Zero Trust" />
       </section>
 
 
