@@ -201,10 +201,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="products/aa-policy-gen"
+                    href="/products/aa-policy-gen"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    AI Policy Generating
+                    AI Assisted Policy Generation
                   </Link>
                 </li>
               </ul>

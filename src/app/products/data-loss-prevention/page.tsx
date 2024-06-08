@@ -1,85 +1,105 @@
 export default function DataLossPrevention() {
   return (
-    <section
-      id="home"
-      className="mx-auto relative z-40 overflow-hidden pt-28 pb-24 sm:pt-36 lg:pt-[170px] lg:pb-[120px]"
-    >
-      <div className="px-4 xl:container">
-        <div className="-mx-4 flex flex-wrap items-center text-right">
-          <div className="mx-auto w-full px-3 lg:w-1/2"
-          >
-            <div className="mx-auto mb-12 max-w-[530px] text-center lg:ml-0 lg:mb-0 lg:text-center">
-
-              <h1 className="wow fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-2xl md:text-4xl md:leading-6xl" data-wow-delay=".3s">
-                <span className="inline-grid text-center"
-                  data-aos="fade-right"
-                >Denovo Security Data Loss Prevention (DLP)</span>
-              </h1>
-
-              <p className="wow fadeInUp mb-12 text-base dark:text-white font-semibold" data-aos="fade-left">
-                This product safeguards sensitive information from loss, misuse, or unauthorized access. Denovo Security's DLP technology monitors, detects, and blocks the transmission of confidential data across various channels and devices, ensuring compliance with regulations and protecting business information.</p>
-            </div>
-          </div>
-
+    <section className="pt-[3px]">
+      <div className="min-h-screen flex flex-col justify-center items-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 dark:text-white mb-4" data-aos="fade-up">Data Loss Prevention</h1>
+        <p className="text-center text-gray-500 dark:text-gray-300 text-lg md:text-xl lg:text-2xl mb-8">Protecting sensitive information and preventing data breaches</p>
+        <div className="flex space-x-4">
+          <a href="#" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
         </div>
       </div>
-      <div
-        className="absolute bottom-0 left-0 -z-10 h-full w-full bg-cover bg-center opacity-10 dark:opacity-40 bg-noise-pattern"
-      ></div>
-      <div className="absolute top-0 right-0 -z-10">
-        <svg
-          width="1356"
-          height="860"
-          viewBox="0 0 1356 860"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.5" filter="url(#filter0_f_201_2181)">
-            <rect
-              x="450.088"
-              y="-126.709"
-              width="351.515"
-              height="944.108"
-              transform="rotate(-34.6784 450.088 -126.709)"
-              fill="url(#paint0_linear_201_2181)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_201_2181"
-              x="0.0878906"
-              y="-776.711"
-              width="1726.24"
-              height="1876.4"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="225"
-                result="effect1_foregroundBlur_201_2181"
-              />
-            </filter>
-            <linearGradient
-              id="paint0_linear_201_2181"
-              x1="417.412"
-              y1="59.4717"
-              x2="966.334"
-              y2="603.857"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#ABBCFF" />
-              <stop offset="0.859375" stopColor="#4A6CF7" />
-            </linearGradient>
-          </defs>
-        </svg>
+{/* Overview section */}
+<section className="py-12 bg-gray-100 dark:bg-gray-800">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-white mb-6" data-aos="fade-up">Overview</h2>
+    <p className="text-center text-gray-600 dark:text-gray-300 text-lg mb-8" data-aos="fade-up">
+      Data Loss Prevention (DLP) encompasses a suite of tools and processes designed to prevent the loss, unauthorized access, and misuse of sensitive data. Our DLP solutions help organizations comply with regulations, protect their reputation, and ensure that critical information remains secure.
+    </p>
+    <div className="flex flex-wrap justify-center space-x-4" data-aos="fade-up">
+      <div className="bg-white dark:bg-gray-900 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Why DLP?</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          The rise in data breaches and cyber attacks makes DLP essential. It protects sensitive information from falling into the wrong hands and helps maintain customer trust.
+        </p>
       </div>
+      <div className="bg-white dark:bg-gray-900 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">DLP Techniques</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Effective DLP strategies use a combination of encryption, access control, data masking, and user activity monitoring to safeguard data.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{/* Key Features section */}
+<section className="py-12">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-white mb-6" data-aos="fade-up">Key Features</h2>
+    <div className="flex flex-wrap justify-center space-x-4" data-aos="fade-up">
+      <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Real-Time Monitoring</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Our solution continuously monitors data activity to detect and respond to potential threats immediately, ensuring proactive protection.
+        </p>
+      </div>
+      <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Data Classification</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Automatically classify and categorize data based on its sensitivity level, ensuring that appropriate security measures are applied.
+        </p>
+      </div>
+      <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Policy Enforcement</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Implement and enforce security policies to control access, usage, and sharing of sensitive data, preventing unauthorized access.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{/* benefits section */}
+<section className="py-12 bg-gray-100 dark:bg-gray-800">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-white mb-6" data-aos="fade-up">Benefits</h2>
+    <div className="flex flex-wrap justify-center space-x-4" data-aos="fade-up">
+      <div className="bg-white dark:bg-gray-900 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Compliance</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Ensure your organization meets all relevant data protection regulations, such as GDPR, HIPAA, and CCPA, avoiding hefty fines and legal repercussions.
+        </p>
+      </div>
+      <div className="bg-white dark:bg-gray-900 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Data Integrity</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Protect the integrity and confidentiality of your data, ensuring that it remains accurate and unaltered from unauthorized access.
+        </p>
+      </div>
+      <div className="bg-white dark:bg-gray-900 p-6 rounded shadow-md max-w-sm">
+        <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Cost Savings</h3>
+        <p className="text-gray-600 dark:text-gray-300">
+          Mitigate the financial impact of data breaches by preventing them. Save on costs related to fines, legal actions, and damage to your brand's reputation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{/* How it works section */}
+<section className="py-12">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-white mb-6" data-aos="fade-up">How It Works</h2>
+    <div className="flex flex-wrap justify-center items-center space-x-4" data-aos="fade-up">
+      <div className="w-full md:w-1/2 p-6">
+        <img src="../images/overview/products overview/dlpmain.drawio.png" alt="DLP Workflow Diagram" className="rounded shadow-md" />
+      </div>
+      <div className="w-full md:w-1/2 p-6">
+        <p className="text-gray-600 dark:text-gray-300 text-lg">
+          Our Data Loss Prevention solution integrates seamlessly into your existing IT infrastructure. It begins by identifying and classifying sensitive data across your network. Real-time monitoring tools then track data movement and usage, flagging any suspicious activity. Advanced analytics provide insights into potential threats, while policy enforcement ensures that only authorized users can access and manipulate critical data.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
     </section>
   );
 }

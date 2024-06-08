@@ -1,12 +1,13 @@
 export default function DenovoCoreZeroTrust() {
   return (
-    <section id="home"
-    className='mx-auto relative z-40 overflow-hidden pt-28 pb-24 sm:pt-36 lg:pt-[170px] lg:pb-[120px]'
->
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-extrabold mb-4 text text-white">Denovo core zero trust</h2>
-          <p className="text-lg mb-8 text-white" data-aos="fade-right">Explore the powerful features that make our product the best choice for your needs.</p>
-        </div>
-        </section>
+    <section className="pt-[3px]">
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 dark:text-white mb-4" data-aos="fade-up">Denovo Core Zero Trust</h1>
+      <p className="text-center text-gray-500 dark:text-gray-300 text-lg md:text-xl lg:text-2xl mb-8">Protecting sensitive information and preventing data breaches</p>
+      <div className="flex space-x-4">
+        <a href="#" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
+      </div>
+    </div>
+    </section>
   );
 }

@@ -361,7 +361,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/AI Assisted.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                <img src="./images/overview/homepage overview/AI Assisted.drawio.png" className="w-full object-cover" alt="AI Assisted Automatic policy generation" />
               </div>
             </div>
             <div className="w-full lg:w-6/12 lg:pl-6">
