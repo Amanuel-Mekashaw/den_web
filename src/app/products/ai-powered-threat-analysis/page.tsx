@@ -90,6 +90,16 @@ export default function AiPoweredThrearAnalysis() {
           </div>
         </div>
       </section>
+      {/* Call to action */}
+      <section className="py-12 bg-primary text-white">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Ready to Enhance Your Security?</h2>
+    <div className="flex justify-center" data-aos="fade-up">
+      <a href="#" className="inline-flex items-center rounded bg-white text-primary py-[10px] px-6 font-heading text-base hover:bg-opacity-90 md:py-[14px] md:px-8">Get Started</a>
+    </div>
+  </div>
+</section>
+
     </section>
   );
 }
