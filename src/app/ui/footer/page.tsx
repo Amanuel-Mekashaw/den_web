@@ -130,7 +130,7 @@ export default function Footer() {
                     href="/about/career"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Career At Denovo
+                    Careers
                     {/* <!-- <span
                       className="ml-4 rounded bg-primary py-1 px-2 font-heading text-xs text-white"
                     >
@@ -180,7 +180,7 @@ export default function Footer() {
                     href="/products/browser-isolation"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    Browser Isolation
+                    Remote Browser Isolation
                   </Link>
                 </li>
                 <li>

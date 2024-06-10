@@ -1,4 +1,4 @@
-export default function AiPoweredThrearAnalysis() {
+export default function AiPoweredThreatAnalysis() {
   return (
     <section className="pt-[3px]">
       <div className="min-h-screen flex flex-col justify-center items-center">
@@ -8,11 +8,30 @@ export default function AiPoweredThrearAnalysis() {
           <a href="#" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
         </div>
       </div>
+      {/* How it works */}
+      <section id="how-it-works" className="py-10 sm:py-32 relative overflow-hidden">
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary"></div> */}
+        <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
+            <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
+            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+              Denovo Security's AI-powered threat analysis engine continuously monitors network traffic and data flows, applying sophisticated AI algorithms to detect patterns and anomalies. When the AI identifies a potential threat, it triggers an immediate alert and begins the process of threat neutralization. This system operates 24/7, acting as a tireless security analyst that can sift through vast amounts of data to find even the subtlest indicators of an attack. This approach not only enhances security but also reduces the workload on human security analysts.
+            </p>
+          </div>
+          <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="../images/overview/homepage overview/Denovo Core.drawio (1).png" className="w-full h-auto object-cover" alt="Core Zero Trust Diagram" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="py-12 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-white mb-6" data-aos="fade-up">Overview</h2>
           <p className="text-center text-gray-600 dark:text-gray-300 text-lg mb-8" data-aos="fade-up">
-          Denovo Security's AI-powered threat analysis engine represents the cutting edge of cybersecurity technology. Utilizing artificial intelligence, it continuously monitors and analyzes vast amounts of data in real-time. This allows it to identify patterns and anomalies that traditional methods might miss, enabling faster detection of potential security threats and proactive response to neutralize them before they can cause damage.
+            Denovo Security's AI-powered threat analysis engine represents the cutting edge of cybersecurity technology. Utilizing artificial intelligence, it continuously monitors and analyzes vast amounts of data in real-time. This allows it to identify patterns and anomalies that traditional methods might miss, enabling faster detection of potential security threats and proactive response to neutralize them before they can cause damage.
           </p>
         </div>
       </section>
@@ -76,29 +95,15 @@ export default function AiPoweredThrearAnalysis() {
           </div>
         </div>
       </section>
-      {/* How it works */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0">
-          <div className="w-full md:w-1/2 order-2 md:order-1">
-            <img src="../images/overview/homepage overview/Denovo Core.drawio (1).png" alt="AI-Powered Threat Analysis Diagram" className="rounded shadow-md mx-auto md:mx-0" />
-          </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2 px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center md:text-left text-gray-700 dark:text-white mb-4">How It Works</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Denovo Security's AI-powered threat analysis engine continuously monitors network traffic and data flows, applying sophisticated AI algorithms to detect patterns and anomalies. When the AI identifies a potential threat, it triggers an immediate alert and begins the process of threat neutralization. This system operates 24/7, acting as a tireless security analyst that can sift through vast amounts of data to find even the subtlest indicators of an attack. This approach not only enhances security but also reduces the workload on human security analysts.
-            </p>
+      {/* Call to action */}
+      <section className="py-12 bg-primary text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Ready to Enhance Your Security?</h2>
+          <div className="flex justify-center" data-aos="fade-up">
+            <a href="#" className="inline-flex items-center rounded bg-white text-primary py-[10px] px-6 font-heading text-base hover:bg-opacity-90 md:py-[14px] md:px-8">Get Started</a>
           </div>
         </div>
       </section>
-      {/* Call to action */}
-      <section className="py-12 bg-primary text-white">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Ready to Enhance Your Security?</h2>
-    <div className="flex justify-center" data-aos="fade-up">
-      <a href="#" className="inline-flex items-center rounded bg-white text-primary py-[10px] px-6 font-heading text-base hover:bg-opacity-90 md:py-[14px] md:px-8">Get Started</a>
-    </div>
-  </div>
-</section>
 
     </section>
   );

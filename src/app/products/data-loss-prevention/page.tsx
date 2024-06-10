@@ -8,6 +8,23 @@ export default function DataLossPrevention() {
           <a href="#" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
         </div>
       </div>
+      {/* How it works section */}
+      <section id="how-it-works" className="py-10 sm:py-32 relative overflow-hidden">
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary"></div> */}
+        <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
+            <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
+            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+              Our Data Loss Prevention solution integrates seamlessly into your existing IT infrastructure. It begins by identifying and classifying sensitive data across your network. Real-time monitoring tools then track data movement and usage, flagging any suspicious activity. Advanced analytics provide insights into potential threats, while policy enforcement ensures that only authorized users can access and manipulate critical data.
+            </p>
+          </div>
+          <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="../images/overview/products overview/dlpmain.drawio.png" className="w-full h-auto object-cover" alt="Core Zero Trust Diagram" />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Overview section */}
       <section className="py-12 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4">
@@ -80,20 +97,6 @@ export default function DataLossPrevention() {
                 Mitigate the financial impact of data breaches by preventing them. Save on costs related to fines, legal actions, and damage to your brand's reputation.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      {/* How it works section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0">
-          <div className="w-full md:w-1/2 order-2 md:order-1">
-            <img src="../images/overview/products overview/dlpmain.drawio.png" alt="DLP Workflow Diagram" className="rounded shadow-md mx-auto md:mx-0" />
-          </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2 px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center md:text-left text-gray-700 dark:text-white mb-4">How It Works</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Our Data Loss Prevention solution integrates seamlessly into your existing IT infrastructure. It begins by identifying and classifying sensitive data across your network. Real-time monitoring tools then track data movement and usage, flagging any suspicious activity. Advanced analytics provide insights into potential threats, while policy enforcement ensures that only authorized users can access and manipulate critical data.
-            </p>
           </div>
         </div>
       </section>
