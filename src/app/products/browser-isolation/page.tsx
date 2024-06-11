@@ -1,13 +1,13 @@
 export default function BrowserIsolation() {
   return (
     <section className="pt-[3px]">
-      <div className="min-h-screen flex flex-col justify-center items-center">
+      {/* <div className="min-h-screen flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 dark:text-white mb-4" data-aos="fade-up">Browser Isolation</h1>
         <p className="text-center text-gray-500 dark:text-gray-300 text-lg md:text-xl lg:text-2xl mb-8">Shielding devices by running web browsing remotely, stopping web threats before they reach you.</p>
         <div className="flex space-x-4">
           <a href="/request_demo" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
         </div>
-      </div>
+      </div> */}
       {/* How it works section */}
       <section id="how-it-works" className="py-10 sm:py-32 relative overflow-hidden">
         {/* <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary"></div> */}
@@ -93,7 +93,7 @@ export default function BrowserIsolation() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Ready to Secure Your Browsing?</h2>
           <div className="flex justify-center" data-aos="fade-up">
-            <a href="#" className="inline-flex items-center rounded bg-white text-primary py-[10px] px-6 font-heading text-base hover:bg-opacity-90 md:py-[14px] md:px-8">Get Started</a>
+            <a href="#" className="inline-flex items-center rounded bg-white text-primary py-[10px] px-6 font-heading text-base hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
           </div>
         </div>
       </section>

@@ -13,12 +13,12 @@ export default function Footer() {
             <div className="mb-20 max-w-[330px]">
               <Link href="/" className="mb-6 inline-block">
                 <img
-                  src="./images/logo/logo-dark.svg"
+                  src="../images/logo/logo-dark.svg"
                   alt="logo"
                   className="hidden h-[50px] dark:block"
                 />
                 <img
-                  src="./images/logo/logo-light.svg"
+                  src="../images/logo/logo-light.svg"
                   alt="logo"
                   className="h-[50px] dark:hidden"
                 />

@@ -43,7 +43,7 @@ export default function Home() {
                   data-wow-delay=".5s"
                 >
                   <a
-                    href="#features"
+                    href="/request_demo"
                     className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8"
                   >
                     Demo on Demand
