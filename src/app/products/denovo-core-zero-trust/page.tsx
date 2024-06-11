@@ -7,7 +7,7 @@ export default function DenovoCoreZeroTrust() {
           verifying every access request to minimize breaches and unauthorized access.
         </p>
         <div className="flex space-x-4">
-          <a href="#" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
+          <a href="/request_demo" className="inline-flex items-center rounded bg-primary py-[10px] px-6 font-heading text-base text-white hover:bg-opacity-90 md:py-[14px] md:px-8">Demo On Demand</a>
         </div>
       </div>
       {/* How it works section */}
