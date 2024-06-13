@@ -4,9 +4,9 @@ import Link from 'next/link';
 export default function ProductsOverview() {
 
   return (
-    <section id="blog" className="pt-[100px]">
+    <section id="blog" className="pt-[200px]">
 
-      <div className="relative overflow-hidden bg-cover bg-no-repeat custom-filter" style={{
+      {/* <div className="relative overflow-hidden bg-cover bg-no-repeat custom-filter" style={{
         backgroundPosition: '50%',
         // backgroundImage: "url('./images/hero/hero-sec-pro1.jpg')",
         height: '500px',
@@ -56,7 +56,7 @@ export default function ProductsOverview() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <br />
       <span className="text-white mb-2 text-4xl font-medium leading-tight text-center block"
         data-aos="fade-up"
