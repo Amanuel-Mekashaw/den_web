@@ -14,7 +14,7 @@ export default function AaPolicyGen() {
         <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
             <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
-            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+            <p className="text-lg leading-8 text-white mt-6" data-aos="fade-right">
               Denovo Security's AI-Assisted Automatic Policy Generation (AAPG) tool continuously monitors the threat landscape and regulatory environment. It uses advanced AI algorithms to analyze this data and automatically generate security policies that address current threats and comply with the latest regulations. As new threats emerge and regulations change, AAPG updates the policies in real-time, ensuring that organizations are always protected and compliant. This automated process eliminates the need for manual policy creation and updates, reducing the workload on security teams and minimizing the risk of human error.
             </p>
           </div>

@@ -14,7 +14,7 @@ export default function AiPoweredThreatAnalysis() {
         <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
             <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
-            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+            <p className="text-lg leading-8 text-white mt-6" data-aos="fade-right">
               Denovo Security's AI-powered threat analysis engine continuously monitors network traffic and data flows, applying sophisticated AI algorithms to detect patterns and anomalies. When the AI identifies a potential threat, it triggers an immediate alert and begins the process of threat neutralization. This system operates 24/7, acting as a tireless security analyst that can sift through vast amounts of data to find even the subtlest indicators of an attack. This approach not only enhances security but also reduces the workload on human security analysts.
             </p>
           </div>

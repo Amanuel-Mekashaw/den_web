@@ -14,7 +14,7 @@ export default function DataLossPrevention() {
         <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
             <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
-            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+            <p className="text-lg leading-8 text-white mt-6" data-aos="fade-right">
               Our Data Loss Prevention solution integrates seamlessly into your existing IT infrastructure. It begins by identifying and classifying sensitive data across your network. Real-time monitoring tools then track data movement and usage, flagging any suspicious activity. Advanced analytics provide insights into potential threats, while policy enforcement ensures that only authorized users can access and manipulate critical data.
             </p>
           </div>

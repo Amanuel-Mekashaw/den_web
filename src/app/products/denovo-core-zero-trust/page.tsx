@@ -16,7 +16,7 @@ export default function DenovoCoreZeroTrust() {
         <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
             <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
-            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+            <p className="text-lg leading-8 text-white mt-6" data-aos="fade-right">
               Denovo Security's Core Zero Trust framework operates by strictly verifying every access request, regardless of its origin. The framework continuously monitors network traffic and user activity, applying least-privilege access principles to ensure that users have only the access they need. Comprehensive monitoring provides visibility into access patterns and potential security incidents, allowing for prompt identification and response to threats. This approach not only enhances security but also reduces the complexity and overhead associated with traditional security models.
             </p>
           </div>

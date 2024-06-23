@@ -14,7 +14,7 @@ export default function BrowserIsolation() {
         <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
             <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">How It Works</h3>
-            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+            <p className="text-lg leading-8 text-white mt-6" data-aos="fade-right">
               Denovo Security Browser Isolation works by redirecting all web traffic through a secure, remote server. When a user initiates a web session, the browsing activity is executed in this isolated environment, away from the local device and network. Any malicious content encountered during the session is contained within the remote environment and does not reach the user’s endpoint. This method ensures that web-based threats are neutralized before they can cause harm.
             </p>
           </div>
