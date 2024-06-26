@@ -24,7 +24,7 @@ export default function Header() {
       <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20">
         <div className="relative z-[99] max-w-[250px] lg:w-full xl:max-w-[350px]">
           <Link href="/">
-            <img src="../images/logo/logo-dark.svg" alt="logo" className="hidden h-[80px] dark:block" />
+            <img src="../images/logo/logo-removebg-preview.png" alt="logo" className="hidden h-[100px] dark:block" />
           </Link>
         </div>
         <div className={`menu-wrapper ${menuOpen ? 'flex' : 'hidden'} fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent`}>
@@ -32,7 +32,7 @@ export default function Header() {
             <nav>
               <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-10 lg:space-y-0">
                 <NavigationMenu.List>
-                  <Link href="/" className="menu-scroll active inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white">
+                  <Link href="/" className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white">
                     Home
                   </Link>
                 </NavigationMenu.List>
