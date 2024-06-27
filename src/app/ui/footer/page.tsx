@@ -13,14 +13,9 @@ export default function Footer() {
             <div className="mb-20 max-w-[330px]">
               <Link href="/" className="mb-6 inline-block">
                 <img
-                  src="../images/logo/logo-removebg-preview.png"
+                  src="../images/logo/new-logo.png"
                   alt="logo"
-                  className="hidden h-[90px] dark:block"
-                />
-                <img
-                  src="../images/logo/logo-light.svg"
-                  alt="logo"
-                  className="h-[50px] dark:hidden"
+                  className="hidden h-[150px] dark:block"
                 />
               </Link>
 

@@ -22,9 +22,9 @@ export default function Header() {
   return (
     <NavigationMenu.Root className="absolute header top-0 left-0 w-full">
       <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20">
-        <div className="relative z-[99] max-w-[250px] lg:w-full xl:max-w-[350px]">
+        <div className="relative max-w-[250px] max-h-[100px] lg:w-full xl:max-w-[350px]">
           <Link href="/">
-            <img src="../images/logo/logo-removebg-preview.png" alt="logo" className="hidden h-[100px] dark:block" />
+            <img src="../images/logo/new-logo.png" alt="logo" className="hidden h-[140px] dark:block my-[-20px]" />
           </Link>
         </div>
         <div className={`menu-wrapper ${menuOpen ? 'flex' : 'hidden'} fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent`}>

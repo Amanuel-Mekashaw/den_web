@@ -31,7 +31,7 @@ export default function Home() {
                   data-wow-delay=".3s"
                 >
                   <span className="inline-grid" data-aos="fade-left">Building Trust From</span>
-                  <span className="inline-grid" data-aos="fade-left">Scratch.</span>
+                  <span className="inline-grid text-yellow-300" data-aos="fade-left">Scratch.</span>
                 </h1>
                 <p
                   className="wow fadeInUp mb-12 text-xl text-dark-text"
@@ -261,7 +261,6 @@ export default function Home() {
 
 
       {/* <!-- Container for demo purpose --> */}
-      <section className="">
         <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r"></div>
           <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
@@ -453,8 +452,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-      </section>
     </div>
   );
 }
