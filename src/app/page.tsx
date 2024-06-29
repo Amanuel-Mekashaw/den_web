@@ -14,7 +14,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <div>
+    <div className='overflow-hidden'>
       <section
         id="home"
         className="relative z-40 overflow-hidden pt-28 pb-24 sm:pt-36 lg:pt-[170px] lg:pb-[120px]"
@@ -286,7 +286,7 @@ export default function Home() {
 
 
 
-        <section id="overview" className="bg-white py-10 sm:py-32">
+        <section id="overview" className="bg-white py-10 sm:py-32 relative overflow-hidden">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
               <div className="relative overflow-hidden rounded-lg">
@@ -310,7 +310,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="overview" className="bg-gray-200 py-10 sm:py-32">
+        <section id="overview" className="bg-gray-200 py-10 sm:py-32 relative overflow-hidden">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
               <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">AI Powered Threat Analysis</h3>

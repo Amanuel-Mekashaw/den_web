@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <NavigationMenu.Root className="absolute header top-0 left-0 w-full">
       <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20">
-        <div className="relative max-w-[250px] max-h-[100px] lg:w-full xl:max-w-[350px]">
+      <div className="relative max-w-[250px] max-h-[100px] lg:w-full xl:max-w-[350px]">
           <Link href="/">
             <img src="../images/logo/new-logo.png" alt="logo" className="hidden h-[140px] dark:block my-[-20px]" />
           </Link>
@@ -168,6 +168,7 @@ export default function Header() {
           </button>
         </div>
       </div>
+      <script src="../vendors/sticky.js"></script>
     </NavigationMenu.Root>
   );
 }
