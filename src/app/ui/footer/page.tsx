@@ -170,14 +170,6 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/products/browser-isolation"
-                    className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                  >
-                    Remote Browser Isolation
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/products/data-loss-prevention"
                     className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                   >

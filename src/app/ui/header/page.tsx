@@ -95,11 +95,6 @@ export default function Header() {
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/products/browser-isolation" className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white">
-                        Browser Isolation
-                      </Link>
-                    </NavigationMenu.Item>
-                    <NavigationMenu.Item>
                       <Link href="/products/data-loss-prevention" className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white">
                         Data Loss Prevention
                       </Link>

@@ -75,7 +75,7 @@ export default function Home() {
                   preload="metadata"
                   poster="/images/video cover.png"
                 >
-                  <source src="/videos/denovo security 1.4.mp4" type="video/mp4" />
+                  <source src="/videos/remove-browser-isolation.mp4" type="video/mp4" />
                   <track
                     src="/videos/captions.vtt"
                     kind="subtitles"
@@ -280,27 +280,6 @@ export default function Home() {
         </div>
       </section>
       {/* <!-- Container for demo purpose --> */}
-      <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r opacity-50 z-0"></div>
-        <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
-          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 order-2 lg:order-1">
-            <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white text-center lg:text-left">Browser Isolation</h3>
-            <p className="text-xl lg:text-2xl leading-8 text-white mt-6 text-center lg:text-left" data-aos="fade-right">
-              Denovo Browser Isolation protects your organization from web-based threats by isolating web content in a secure container.
-            </p>
-            <div className="flex justify-center lg:justify-start mt-6">
-              <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
-            <div className="relative overflow-hidden rounded-lg">
-              <img src="./images/overview/homepage overview/Browser Isolation.drawio.png" className="w-full h-auto object-cover" alt="Browser Isolation" />
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="overview" className="py-10 sm:py-32 bg-gradient-to-r text-white opacity-90 z-0">
         <div className="container mx-auto flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
@@ -328,7 +307,7 @@ export default function Home() {
       {/* Hexagonal grids */}
       <section className="bg-gray-200 py-10 lg:py-16 shadow-md">
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 auto-cols-fr min-w-[300px]">
             {/* Card 1 */}
             <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
               <div className="flex flex-col items-center px-6 py-8">
@@ -346,22 +325,6 @@ export default function Home() {
               </div>
             </div>
             {/* Duplicate the card 3 more times */}
-            {/* Card 2 */}
-            <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
-              <div className="flex flex-col items-center px-6 py-8">
-                <div className="flex-shrink-0 mb-4">
-                  <img src="./images/overview/hexagon_logo/logo_hexa_bI.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-                </div>
-                <div className="text-center">
-                  <p className="text-2xl font-bold">Browser Isolation</p>
-                  <div className="flex justify-center mt-4">
-                    <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
             {/* Card 3 */}
             <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
               <div className="flex flex-col items-center px-6 py-8">
@@ -380,7 +343,7 @@ export default function Home() {
             </div>
             {/* Card 4 */}
             <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
-              <div className="flex flex-col items-center px-6 py-8">
+              <div className="flex flex-col items-center px-8 py-8">
                 <div className="flex-shrink-0 mb-4">
                   <img src="./images/overview/hexagon_logo/logo_hex_AI-PO.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
                 </div>

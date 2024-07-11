@@ -115,55 +115,6 @@ export default function ProductsOverview() {
             </div>
           </div>
 
-          <div className="mb-16 flex flex-wrap lg:flex-row-reverse" data-aos="fade-up"
-          >
-            <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pl-6" data-aos="fade-right">
-              <div
-                className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
-                data-te-ripple-init data-te-ripple-color="light">
-                <img src="./images/overview/homepage overview/Browser Isolation.drawio.png" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <Link href="/products/browser-isolation">
-                  <div
-                    className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pr-6">
-              <h3 className="mb-4 text-2xl font-bold text-white text-center">Browser Isolation</h3>
-              <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
-                <p className='font-heading text-pretty text-xl' data-aos="type-right">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
-                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
-                  </svg>
-                  Provide an additional layer of security by segregating browsing activities from the local network and devices.
-                </p>
-                <br />
-                <p className='font-heading text-pretty text-xl'>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
-                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
-                  </svg>
-                  Web sessions are executed in a secure, remote environment, shielding users from web-based threats and reducing the risk of malware infections.
-                </p>
-                <br />
-                <p className='font-heading text-pretty text-xl'>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
-                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
-                  </svg>
-                  Effective safeguard against malware infections originating from internet browsing, by isolating web sessions and preventing malicious code from reaching user endpoints.
-                </p>
-                <br />
-                {/* add a learnmore link */}
-                <Link href='/products/browser-isolation'>
-                  <span className='text-primary hover:text-primary-600 text-xl'>Learn more
-                  </span>
-                </Link>
-              </ul>
-            </div>
-
-          </div>
-
           <div className="flex flex-wrap "
             data-aos="fade-up"
 
@@ -188,7 +139,7 @@ export default function ProductsOverview() {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
                     <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
                   </svg>
-                 Safeguard sensitive information from loss, misuse, or unauthorized access.
+                  Safeguard sensitive information from loss, misuse, or unauthorized access.
                 </p>
                 <br />
                 <p className='font-heading text-pretty text-xl'>
@@ -214,7 +165,7 @@ export default function ProductsOverview() {
             </div>
           </div>
 
-          
+
           <br />
         </section>
       </div>
@@ -269,59 +220,59 @@ export default function ProductsOverview() {
             </div>
           </div>
 
-          
+
           <br />
         </section>
         <div className="flex flex-wrap "
-            data-aos="fade-up"
+          data-aos="fade-up"
 
-          >
-            <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6" data-aos="fade-right">
-              <div
-                className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
-                data-te-ripple-init data-te-ripple-color="light">
-                <img src="./images/overview/homepage overview/AI Assisted.drawio.png" className="w-full" alt="Louvre" data-aos="zoom-in" />
-                <a href="/products/aa-policy-gen">
-                  <div
-                    className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6" data-aos="fade-left">
-              <h3 className="mb-4 text-2xl font-bold text-white text-center">AI Assisted Automatic Policy Generation (AAPG)</h3>
-              <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
-                <p className='font-heading text-pretty text-xl'>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
-                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
-                  </svg>
-                  Denovo AI Assisted Automatic Policy Generation (AAPG) leverages artificial intelligence.
-                </p>
-                <br />
-                <p className='font-heading text-pretty text-xl'>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
-                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
-                  </svg>
-                  It uses machine learning algorithms to create security policies.
-                </p>
-                <br />
-                <p className='font-heading text-pretty text-xl'>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
-                    <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
-                  </svg>
-                  The policies are automatically generated to fit your organization's specific needs.
-                  </p>
-                <br />
-                {/* add a learnmore link */}
-                <Link href='/products/aa-policy-gen'>
-                  <span className='text-primary hover:text-primary-600 text-xl'>Learn more
-                  </span>
-                </Link>
-              </ul>
+        >
+          <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6" data-aos="fade-right">
+            <div
+              className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+              data-te-ripple-init data-te-ripple-color="light">
+              <img src="./images/overview/homepage overview/AI Assisted.drawio.png" className="w-full" alt="Louvre" data-aos="zoom-in" />
+              <a href="/products/aa-policy-gen">
+                <div
+                  className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                </div>
+              </a>
             </div>
           </div>
+
+          <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6" data-aos="fade-left">
+            <h3 className="mb-4 text-2xl font-bold text-white text-center">AI Assisted Automatic Policy Generation (AAPG)</h3>
+            <ul className="list-disc list-inside text-neutral-500 dark:text-neutral-300">
+              <p className='font-heading text-pretty text-xl'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                  <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                </svg>
+                Denovo AI Assisted Automatic Policy Generation (AAPG) leverages artificial intelligence.
+              </p>
+              <br />
+              <p className='font-heading text-pretty text-xl'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                  <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                </svg>
+                It uses machine learning algorithms to create security policies.
+              </p>
+              <br />
+              <p className='font-heading text-pretty text-xl'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="inline-block w-5 h-5 mr-2 fill-current text-blue-400">
+                  <path d="M20.121 4.828a2 2 0 0 0-2.828 0l-9.9 9.9-3.535-3.535a2 2 0 1 0-2.828 2.828l5.657 5.657a2 2 0 0 0 2.828 0l11.314-11.314a2 2 0 0 0 0-2.828z" />
+                </svg>
+                The policies are automatically generated to fit your organization's specific needs.
+              </p>
+              <br />
+              {/* add a learnmore link */}
+              <Link href='/products/aa-policy-gen'>
+                <span className='text-primary hover:text-primary-600 text-xl'>Learn more
+                </span>
+              </Link>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>    
+    </section>
   );
 }
