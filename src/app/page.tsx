@@ -4,7 +4,6 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from 'next/link';
 
 export default function Home() {
   useEffect(() => {
@@ -30,8 +29,8 @@ export default function Home() {
                   className="wow fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-6xl md:leading-8xl"
                   data-wow-delay=".3s"
                 >
-                  <span className="inline-grid" data-aos="fade-left">Building Trust From</span>
-                  <span className="inline-grid text-yellow-300" data-aos="fade-left">Scratch.</span>
+                  <span className="inline-grid" data-aos="fade-left">Building Trust From Scratch</span>
+
                 </h1>
                 <p
                   className="wow fadeInUp mb-12 text-xl text-dark-text"
@@ -66,84 +65,30 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInRight relative z-30 mx-auto h-[560px] w-full max-w-[700px] lg:ml-0"
-                data-wow-delay=".3s"
-              >
-                <div className="absolute top-0 right-0 lg:w-11/12">
-                  <img src="./images/hero/image-2.jpg" alt="hero-image" />
-                </div>
-                <div className="absolute left-0 bottom-0 z-10">
-                  <img src="./images/hero/image-1.jpg" alt="hero-image" />
-                  <div
-                    className="absolute -top-6 -right-6 -z-10 h-full w-full border border-primary border-opacity-10 bg-primary bg-opacity-5 backdrop-blur-[6px] dark:border-white dark:border-opacity-10 dark:bg-white dark:bg-opacity-10"
-                  ></div>
-                </div>
-                <div className="absolute left-0 bottom-0">
-                  <svg
-                    width="72"
-                    height="38"
-                    viewBox="0 0 72 38"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M62.0035 2.04985C59.6808 1.76671 57.4524 2.70929 55.1508 4.68209C51.3631 7.92863 44.7908 9.54366 38.8668 4.69678C36.329 2.6204 34.117 2.29213 32.2894 2.59672C30.3972 2.91209 28.8057 3.92088 27.5547 4.75487C25.5734 6.07577 23.3915 7.46379 20.8786 7.78953C18.2847 8.12577 15.515 7.32034 12.3598 4.69105C9.71804 2.48955 7.45748 2.0661 5.72104 2.33325C3.94436 2.6066 2.56003 3.6273 1.76341 4.56877C1.40666 4.99037 0.775686 5.04295 0.354079 4.68621C-0.0675277 4.32946 -0.120109 3.69849 0.236635 3.27688C1.27334 2.05168 3.0643 0.71846 5.41692 0.356509C7.80979 -0.0116349 10.6326 0.648246 13.6402 3.1546C16.485 5.52529 18.7154 6.05321 20.6215 5.80612C22.6086 5.54854 24.4266 4.43657 26.4453 3.09078L27 3.92282L26.4453 3.09078C27.6943 2.25809 29.6028 1.0169 31.9606 0.623935C34.383 0.220203 37.1711 0.725274 40.1333 3.14886C45.1548 7.25733 50.6369 5.9169 53.8492 3.16356C56.3795 0.994798 59.1512 -0.312658 62.2455 0.0645503C65.3089 0.43799 68.4333 2.43425 71.7557 6.26783C72.1174 6.68518 72.0723 7.31674 71.655 7.67845C71.2376 8.04015 70.606 7.99504 70.2443 7.57769C67.0668 3.91125 64.3571 2.33677 62.0035 2.04985Z"
-                      fill="#4A6CF7"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M62.0035 11.9726C59.6808 11.6895 57.4524 12.6321 55.1508 14.6049C51.3631 17.8514 44.7908 19.4664 38.8668 14.6196C36.329 12.5432 34.117 12.2149 32.2894 12.5195C30.3972 12.8349 28.8057 13.8437 27.5547 14.6776C25.5734 15.9985 23.3915 17.3866 20.8786 17.7123C18.2847 18.0485 15.515 17.2431 12.3598 14.6138C9.71804 12.4123 7.45748 11.9889 5.72104 12.256C3.94436 12.5294 2.56003 13.5501 1.76341 14.4915C1.40666 14.9131 0.775686 14.9657 0.354079 14.609C-0.0675277 14.2522 -0.120109 13.6213 0.236635 13.1997C1.27334 11.9745 3.0643 10.6412 5.41692 10.2793C7.80979 9.91114 10.6326 10.571 13.6402 13.0774C16.485 15.4481 18.7154 15.976 20.6215 15.7289C22.6086 15.4713 24.4266 14.3594 26.4453 13.0136L27 13.8456L26.4453 13.0136C27.6943 12.1809 29.6028 10.9397 31.9606 10.5467C34.383 10.143 37.1711 10.648 40.1333 13.0716C45.1548 17.1801 50.6369 15.8397 53.8492 13.0863C56.3795 10.9176 59.1512 9.61012 62.2455 9.98733C65.3089 10.3608 68.4333 12.357 71.7557 16.1906C72.1174 16.608 72.0723 17.2395 71.655 17.6012C71.2376 17.9629 70.606 17.9178 70.2443 17.5005C67.0668 13.834 64.3571 12.2595 62.0035 11.9726Z"
-                      fill="#4A6CF7"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M62.0035 21.8954C59.6808 21.6123 57.4524 22.5548 55.1508 24.5276C51.3631 27.7742 44.7908 29.3892 38.8668 24.5423C36.329 22.4659 34.117 22.1377 32.2894 22.4423C30.3972 22.7576 28.8057 23.7664 27.5547 24.6004C25.5734 25.9213 23.3915 27.3093 20.8786 27.6351C18.2847 27.9713 15.515 27.1659 12.3598 24.5366C9.71804 22.3351 7.45748 21.9117 5.72104 22.1788C3.94436 22.4521 2.56003 23.4728 1.76341 24.4143C1.40666 24.8359 0.775686 24.8885 0.354079 24.5318C-0.0675277 24.175 -0.120109 23.544 0.236635 23.1224C1.27334 21.8972 3.0643 20.564 5.41692 20.2021C7.80979 19.8339 10.6326 20.4938 13.6402 23.0002C16.485 25.3708 18.7154 25.8988 20.6215 25.6517C22.6086 25.3941 24.4266 24.2821 26.4453 22.9363L27 23.7684L26.4453 22.9363C27.6943 22.1036 29.6028 20.8624 31.9606 20.4695C34.383 20.0658 37.1711 20.5708 40.1333 22.9944C45.1548 27.1029 50.6369 25.7624 53.8492 23.0091C56.3795 20.8403 59.1512 19.5329 62.2455 19.9101C65.3089 20.2835 68.4333 22.2798 71.7557 26.1134C72.1174 26.5307 72.0723 27.1623 71.655 27.524C71.2376 27.8857 70.606 27.8406 70.2443 27.4232C67.0668 23.7568 64.3571 22.1823 62.0035 21.8954Z"
-                      fill="#4A6CF7"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M62.0035 31.8182C59.6808 31.535 57.4524 32.4776 55.1508 34.4504C51.3631 37.697 44.7908 39.312 38.8668 34.4651C36.329 32.3887 34.117 32.0605 32.2894 32.365C30.3972 32.6804 28.8057 33.6892 27.5547 34.5232C25.5734 35.8441 23.3915 37.2321 20.8786 37.5579C18.2847 37.8941 15.515 37.0887 12.3598 34.4594C9.71804 32.2579 7.45748 31.8344 5.72104 32.1016C3.94436 32.3749 2.56003 33.3956 1.76341 34.3371C1.40666 34.7587 0.775686 34.8113 0.354079 34.4545C-0.0675277 34.0978 -0.120109 33.4668 0.236635 33.0452C1.27334 31.82 3.0643 30.4868 5.41692 30.1248C7.80979 29.7567 10.6326 30.4166 13.6402 32.9229C16.485 35.2936 18.7154 35.8215 20.6215 35.5745C22.6086 35.3169 24.4266 34.2049 26.4453 32.8591L27 33.6911L26.4453 32.8591C27.6943 32.0264 29.6028 30.7852 31.9606 30.3923C34.383 29.9885 37.1711 30.4936 40.1333 32.9172C45.1548 37.0257 50.6369 35.6852 53.8492 32.9319C56.3795 30.7631 59.1512 29.4557 62.2455 29.8329C65.3089 30.2063 68.4333 32.2026 71.7557 36.0362C72.1174 36.4535 72.0723 37.0851 71.655 37.4468C71.2376 37.8085 70.606 37.7634 70.2443 37.346C67.0668 33.6796 64.3571 32.1051 62.0035 31.8182Z"
-                      fill="#4A6CF7"
-                    />
-                  </svg>
-                </div>
-                <div className="absolute left-1/2 bottom-0">
-                  <svg
-                    width="120"
-                    height="120"
-                    viewBox="0 0 120 120"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.9"
-                      d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60Z"
-                      fill="url(#paint0_angular_300_926)"
-                    />
-                    <defs>
-                      <radialGradient
-                        id="paint0_angular_300_926"
-                        cx="0"
-                        cy="0"
-                        r="1"
-                        gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(60 60) rotate(90) scale(60)"
-                      >
-                        <stop colorstop-="#4A6CF7" />
-                        <stop offset="1" stopColor="#111722" />
-                      </radialGradient>
-                    </defs>
-                  </svg>
-                </div>
+            <div className="w-full px-4 lg:w-1/2 relative">
+              <div className="wow z-30 mx-auto w-full max-w-[700px] lg:ml-0 relative" style={{ paddingBottom: '56.25%' }}>
+                
+                <video
+                  className="absolute inset-0 w-full h-full duration-300"
+                  style={{ objectFit: 'contain' }}
+                  controls
+                  preload="metadata"
+                  poster="/images/video cover.png"
+                >
+                  <source src="/videos/denovo security 1.4.mp4" type="video/mp4" />
+                  <track
+                    src="/videos/captions.vtt"
+                    kind="subtitles"
+                    srcLang="en"
+                    label="English"
+                  />
+                  Your browser does not support the video tag.
+                </video>
               </div>
-            </div> */}
+            </div>
+
+
+
           </div>
         </div>
 
@@ -261,116 +206,138 @@ export default function Home() {
 
 
       {/* <!-- Container for demo purpose --> */}
-        <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r"></div>
-          <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
-              <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">Denovo Core Zero Trust</h3>
-              <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
-                Denovo Core Zero Trust is a comprehensive cybersecurity solution that provides a holistic approach to security. It is designed to protect your business from the most advanced cyber threats.
-              </p>
-              <div className="flex justify-center lg:justify-start mt-6">
-                <a href="/products/denovo-core-zero-trust" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/homepage overview/Denovo Core.drawio (1).png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
-              </div>
+      <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r"></div>
+        <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
+            <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">Denovo Core Zero Trust</h3>
+            <p className="text-xl lg:text-2xl leading-8 text-white mt-6" data-aos="fade-right">
+              Denovo Core Zero Trust is a comprehensive cybersecurity solution that provides a holistic approach to security. It is designed to protect your business from the most advanced cyber threats.
+            </p>
+            <div className="flex justify-center lg:justify-start mt-6">
+              <a href="/products/denovo-core-zero-trust" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                Learn More
+              </a>
             </div>
           </div>
-        </section>
-
-
-
-
-        <section id="overview" className="bg-white py-10 sm:py-32 relative overflow-hidden">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/homepage overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-              </div>
+          <div className="w-full lg:w-8/12 lg:pl-6 mt-8 lg:mt-0" data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="./images/overview/homepage overview/Denovo Core.drawio (1).png" className="w-full h-auto object-cover" alt="Denovo Core Zero Trust" />
             </div>
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">Data Loss Prevention</h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-2/3 lg:pr-6">
-                  <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
-                    Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and protect sensitive information from unauthorized access.
-                  </p>
-                  <div className="flex justify-center lg:justify-start mt-6">
-                    <a href="/products/data-loss-prevention" className="inline-block bg-gray-200 text-blue-600 hover:bg-white hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                      Learn More
-                    </a>
-                  </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section id="overview" className="bg-white py-10 sm:py-32 relative overflow-hidden">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center">
+          <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="./images/overview/homepage overview/dlpmain.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+            </div>
+          </div>
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+            <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">Data Loss Prevention</h3>
+            <div className="flex flex-col lg:flex-row items-center lg:items-start">
+              <div className="lg:w-2/3 lg:pr-6">
+                <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
+                  Denovo Data Loss Prevention is a comprehensive solution that helps you prevent data loss and protect sensitive information from unauthorized access.
+                </p>
+                <div className="flex justify-center lg:justify-start mt-6">
+                  <a href="/products/data-loss-prevention" className="inline-block bg-gray-200 text-blue-600 hover:bg-white hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section id="overview" className="bg-gray-200 py-10 sm:py-32 relative overflow-hidden">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
-              <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">AI Powered Threat Analysis</h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start mt-6">
-                <div className="lg:w-2/3 lg:pr-6">
-                  <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
-                    Denovo AI Powered Threat Analysis uses machine learning algorithms to detect and respond to cyber threats in real-time.
-                  </p>
-                  <div className="flex justify-center lg:justify-start mt-6">
-                    <a href="/products/ai-powered-threat-analysis" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                      Learn More
-                    </a>
-                  </div>
+        </div>
+      </section>
+      <section id="overview" className="bg-gray-200 py-10 sm:py-32 relative overflow-hidden">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center">
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+            <h3 className="mt-2 text-4xl lg:text-4xl font-bold tracking-tight text-gray-900">AI Powered Threat Analysis</h3>
+            <div className="flex flex-col lg:flex-row items-center lg:items-start mt-6">
+              <div className="lg:w-2/3 lg:pr-6">
+                <p className="text-xl lg:text-2xl leading-8 text-gray-700 mt-6 text-center lg:text-left" data-aos="fade-right">
+                  Denovo AI Powered Threat Analysis uses machine learning algorithms to detect and respond to cyber threats in real-time.
+                </p>
+                <div className="flex justify-center lg:justify-start mt-6">
+                  <a href="/products/ai-powered-threat-analysis" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/homepage overview/AI POWERED.drawio.png" className="w-full object-cover" alt="AI Powered Threat Analysis" />
+          </div>
+          <div className="w-full lg:w-6/12 lg:pl-6" data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="./images/overview/homepage overview/AI POWERED.drawio.png" className="w-full object-cover" alt="AI Powered Threat Analysis" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <!-- Container for demo purpose --> */}
+      <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r opacity-50 z-0"></div>
+        <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 order-2 lg:order-1">
+            <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white text-center lg:text-left">Browser Isolation</h3>
+            <p className="text-xl lg:text-2xl leading-8 text-white mt-6 text-center lg:text-left" data-aos="fade-right">
+              Denovo Browser Isolation protects your organization from web-based threats by isolating web content in a secure container.
+            </p>
+            <div className="flex justify-center lg:justify-start mt-6">
+              <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="./images/overview/homepage overview/Browser Isolation.drawio.png" className="w-full h-auto object-cover" alt="Browser Isolation" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="overview" className="py-10 sm:py-32 bg-gradient-to-r text-white opacity-90 z-0">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center">
+          <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <img src="./images/overview/homepage overview/AI Assisted.drawio.png" className="w-full object-cover" alt="AI Assisted Automatic policy generation" />
+            </div>
+          </div>
+          <div className="w-full lg:w-6/12 lg:pl-6">
+            <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">AI Assisted Automatic Policy Generation (AAPG)</h3>
+            <div className="flex flex-col lg:flex-row items-center lg:items-start">
+              <div className="lg:w-2/3 lg:pr-6">
+                <p className="text-xl lg:text-2xl leading-8 mt-6" data-aos="fade-right">
+                  Denovo AI Assisted Automatic Policy Generation (AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
+                </p>
+                <div className="flex justify-center lg:justify-start mt-6">
+                  <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-        {/* <!-- Container for demo purpose --> */}
-        <section id="overview" className="py-10 sm:py-32 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r opacity-50 z-0"></div>
-          <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 order-2 lg:order-1">
-              <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white text-center lg:text-left">Browser Isolation</h3>
-              <p className="text-xl lg:text-2xl leading-8 text-white mt-6 text-center lg:text-left" data-aos="fade-right">
-                Denovo Browser Isolation protects your organization from web-based threats by isolating web content in a secure container.
-              </p>
-              <div className="flex justify-center lg:justify-start mt-6">
-                <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div className="w-full lg:w-6/12 lg:pl-6 mt-8 lg:mt-0 order-1 lg:order-2" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/homepage overview/Browser Isolation.drawio.png" className="w-full h-auto object-cover" alt="Browser Isolation" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="overview" className="py-10 sm:py-32 bg-gradient-to-r text-white opacity-90 z-0">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0" data-aos="fade-left">
-              <div className="relative overflow-hidden rounded-lg">
-                <img src="./images/overview/homepage overview/AI Assisted.drawio.png" className="w-full object-cover" alt="AI Assisted Automatic policy generation" />
-              </div>
-            </div>
-            <div className="w-full lg:w-6/12 lg:pl-6">
-              <h3 className="mt-2 text-4xl lg:text-5xl font-bold tracking-tight text-white">AI Assisted Automatic Policy Generation (AAPG)</h3>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-2/3 lg:pr-6">
-                  <p className="text-xl lg:text-2xl leading-8 mt-6" data-aos="fade-right">
-                    Denovo AI Assisted Automatic Policy Generation (AAPG) uses machine learning algorithms to automatically generate security policies based on your organization's needs.
-                  </p>
-                  <div className="flex justify-center lg:justify-start mt-6">
+        </div>
+      </section>
+      {/* Hexagonal grids */}
+      <section className="bg-gray-200 py-10 lg:py-16 shadow-md">
+        <div className="flex justify-center items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Card 1 */}
+            <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+              <div className="flex flex-col items-center px-6 py-8">
+                <div className="flex-shrink-0 mb-4">
+                  <img src="./images/overview/hexagon_logo/logo_hex_AI_AS.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                </div>
+                <div className="text-center">
+                  <p className="text-2xl font-bold">AI Assisted Automatic Policy Generation</p>
+                  <div className="flex justify-center mt-4">
                     <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
                       Learn More
                     </a>
@@ -378,80 +345,58 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        {/* Hexagonal grids */}
-        <section className="bg-gray-200 py-10 lg:py-16 shadow-md">
-          <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Card 1 */}
-              <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
-                <div className="flex flex-col items-center px-6 py-8">
-                  <div className="flex-shrink-0 mb-4">
-                    <img src="./images/overview/hexagon_logo/logo_hex_AI_AS.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-2xl font-bold">AI Assisted Automatic Policy Generation</p>
-                    <div className="flex justify-center mt-4">
-                      <a href="/products/aa-policy-gen" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                        Learn More
-                      </a>
-                    </div>
+            {/* Duplicate the card 3 more times */}
+            {/* Card 2 */}
+            <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+              <div className="flex flex-col items-center px-6 py-8">
+                <div className="flex-shrink-0 mb-4">
+                  <img src="./images/overview/hexagon_logo/logo_hexa_bI.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                </div>
+                <div className="text-center">
+                  <p className="text-2xl font-bold">Browser Isolation</p>
+                  <div className="flex justify-center mt-4">
+                    <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                      Learn More
+                    </a>
                   </div>
                 </div>
               </div>
-              {/* Duplicate the card 3 more times */}
-              {/* Card 2 */}
-              <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
-                <div className="flex flex-col items-center px-6 py-8">
-                  <div className="flex-shrink-0 mb-4">
-                    <img src="./images/overview/hexagon_logo/logo_hexa_bI.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-2xl font-bold">Browser Isolation</p>
-                    <div className="flex justify-center mt-4">
-                      <a href="/products/browser-isolation" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                        Learn More
-                      </a>
-                    </div>
+            </div>
+            {/* Card 3 */}
+            <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+              <div className="flex flex-col items-center px-6 py-8">
+                <div className="flex-shrink-0 mb-4">
+                  <img src="./images/overview/hexagon_logo/logo_hexa_dlp.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
+                </div>
+                <div className="text-center">
+                  <p className="text-2xl font-bold">Data Loss Prevention</p>
+                  <div className="flex justify-center mt-4">
+                    <a href="/products/data-loss-prevention" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                      Learn More
+                    </a>
                   </div>
                 </div>
               </div>
-              {/* Card 3 */}
-              <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
-                <div className="flex flex-col items-center px-6 py-8">
-                  <div className="flex-shrink-0 mb-4">
-                    <img src="./images/overview/hexagon_logo/logo_hexa_dlp.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-2xl font-bold">Data Loss Prevention</p>
-                    <div className="flex justify-center mt-4">
-                      <a href="/products/data-loss-prevention" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                        Learn More
-                      </a>
-                    </div>
-                  </div>
+            </div>
+            {/* Card 4 */}
+            <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
+              <div className="flex flex-col items-center px-6 py-8">
+                <div className="flex-shrink-0 mb-4">
+                  <img src="./images/overview/hexagon_logo/logo_hex_AI-PO.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
                 </div>
-              </div>
-              {/* Card 4 */}
-              <div className="card rounded-lg bg-white overflow-hidden shadow-lg">
-                <div className="flex flex-col items-center px-6 py-8">
-                  <div className="flex-shrink-0 mb-4">
-                    <img src="./images/overview/hexagon_logo/logo_hex_AI-PO.drawio.png" className="w-full object-cover" alt="Denovo Core Zero Trust" />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-2xl font-bold">AI Powered Threat Analysis</p>
-                    <div className="flex justify-center mt-4">
-                      <a href="/products/ai-powered-threat-analysis" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
-                        Learn More
-                      </a>
-                    </div>
+                <div className="text-center">
+                  <p className="text-2xl font-bold">AI Powered Threat Analysis</p>
+                  <div className="flex justify-center mt-4">
+                    <a href="/products/ai-powered-threat-analysis" className="inline-block bg-white text-blue-600 hover:bg-gray-200 hover:text-blue-800 font-semibold py-3 px-8 rounded-full transition duration-300">
+                      Learn More
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   );
 }
