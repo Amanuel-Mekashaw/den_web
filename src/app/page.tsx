@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Script from 'next/script'
 
 export default function Home() {
   useEffect(() => {
@@ -67,23 +68,7 @@ export default function Home() {
             </div>
             <div className="w-full px-4 lg:w-1/2 relative">
               <div className="wow z-30 mx-auto w-full max-w-[700px] lg:ml-0 relative" style={{ paddingBottom: '56.25%' }}>
-                
-                <video
-                  className="absolute inset-0 w-full h-full duration-300"
-                  style={{ objectFit: 'contain' }}
-                  controls
-                  preload="metadata"
-                  poster="/images/video cover.png"
-                >
-                  <source src="/videos/remove-browser-isolation.mp4" type="video/mp4" />
-                  <track
-                    src="/videos/captions.vtt"
-                    kind="subtitles"
-                    srcLang="en"
-                    label="English"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+              <iframe src="https://player.vimeo.com/video/995913472?badge=0&amp;autopause=0&amp;transparent=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} title="denovo security"></iframe><Script src="https://player.vimeo.com/api/player.js"></Script>
               </div>
             </div>
 
