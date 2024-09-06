@@ -9,7 +9,8 @@ export default function DataLossPrevention() {
         </div>
       </div> */}
       {/* How it works section */}
-      <section id="how-it-works" className="py-10 sm:py-32 relative overflow-hidden">
+      <section id="how-it-works" className="pt-24 lg:pt-32 py-10 sm:py-32 relative overflow-hidden"
+      >
         {/* <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary"></div> */}
         <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
           <div className="w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 text-center lg:text-left">
