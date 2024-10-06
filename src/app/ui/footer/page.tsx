@@ -20,7 +20,7 @@ export default function Footer() {
               </Link>
 
               <p className="mb-10 text-base text-dark-text">
-              
+              3301 Richmond Hwy, Alexandria, Virginia 22305, US
               </p>
               <div className="flex items-center space-x-5">
                 {/* <Link
@@ -281,7 +281,7 @@ export default function Footer() {
             </div>
           </div> --> */}
 
-          <div
+          {/* <div
             className="w-full px-4 sm:w-1/2 md:w-5/12 lg:w-5/12 xl:w-3/12"
           >
             <div className="mb-20">
@@ -317,7 +317,7 @@ export default function Footer() {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="dark:border-[#2E333D] md:border-t">
