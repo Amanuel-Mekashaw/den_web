@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { CheckCircle, Shield, Lock, Zap, X } from 'lucide-react';
+import { Database, X, BrainCircuit, Cloud, ListChecks} from 'lucide-react';
 
 export default function RequestDemo() {
   const [email, setEmail] = useState('');
@@ -59,18 +59,20 @@ export default function RequestDemo() {
       <div className="container mx-auto px-8 py-24 sm:py-36">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+            <h1 className="wow fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-6xl md:leading-8xl"
+            >
               Discover how our solutions can protect you from the latest threats.
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-300">
+            <p className="mb-12 text-xl text-dark-text"
+            >
               Our team of cybersecurity experts has the knowledge and experience to safeguard your business. Request a demo.
             </p>
             <div className="space-y-4">
               {[
-                { icon: Shield, text: 'Advanced threat detection' },
-                { icon: Lock, text: 'End-to-end encryption' },
-                { icon: Zap, text: 'Real-time monitoring' },
-                { icon: CheckCircle, text: 'Compliance management' },
+                { icon: Database, text: 'Data loss prevention' },
+                { icon: BrainCircuit, text: 'AI Powered threat analysis' },
+                { icon: Cloud, text: 'Cloud based security' },
+                { icon: ListChecks, text: 'AI Assisted policy generation' },
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <feature.icon className="w-6 h-6 text-blue-400" />
