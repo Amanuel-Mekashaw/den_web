@@ -213,9 +213,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
       <section id="overview" className="bg-white py-10 sm:py-32 relative overflow-hidden">
         <div className="container mx-auto flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-6/12 lg:pl-6 lg:pr-6 mb-6 lg:mb-0 " data-aos="fade-left">

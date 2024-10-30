@@ -14,7 +14,7 @@ export default function Footer() {
               <Link href="/" className="mb-6 inline-block">
                 <img
                   src="../images/logo/new-logo.png"
-                  alt="logo"
+                  alt="Denovo Security logo"
                   className="hidden h-[150px] dark:block"
                 />
               </Link>
@@ -232,12 +232,6 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/guidelines"
-                    className="font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
-                  >
-                    Guide Lines
-                  </Link>
                 </li>
                 
               </ul>
@@ -327,13 +321,13 @@ export default function Footer() {
                 className="mb-5 flex items-center justify-center space-x-5 border-b pb-5 dark:border-[#2E333D] md:mb-0 md:justify-start md:border-0 md:pb-0"
               >
                 <Link
-                  href="/guidelines"
+                  href="/privacy-policy"
                   className="font-heading text-base text-dark-text hover:text-primary"
                 >
                   Privacy Policy
                 </Link>
                 <Link
-                  href="/guidelines"
+                  href="/support"
                   className="font-heading text-base text-dark-text hover:text-primary"
                 >
                   Support

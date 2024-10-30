@@ -31,7 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         // EMail options
         let mailOptions = {
             from: '"denovo security" <youremail@example.com>', // Sender address
-            to: 'kidanekal.kifle@denovosecurity.com', // Your email (where you receive the demo requests)
+            to: 'admin@denovosecurity.com', // Your email (where you receive the demo requests)
             subject: 'New Demo Request',
             text: `Demo Request from ${firstName} ${lastName} - Email: ${email}`,
             html: `<p>Demo Request from <strong>${firstName} ${lastName}</strong></p>

@@ -27,8 +27,9 @@ export default function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleLinkClick = () => {
-    setMenuOpen(false); // Close menu when a link is clicked
+  const handleLinkClick = (path: string) => {
+    // Navigate with full page reload
+    window.location.href = path;
   };
 
   const toggleSubMenu = (setSubMenuState: { (value: React.SetStateAction<boolean>): void; (value: React.SetStateAction<boolean>): void; (value: React.SetStateAction<boolean>): void; (arg0: boolean): void; }, subMenuState: boolean) => {
@@ -44,7 +45,7 @@ export default function Header() {
           <Link href="/">
             <Image
               src="/images/logo/new-logo.png"
-              alt="logo"
+              alt="Denovo Security logo"
               className="hidden h-[140px] dark:block my-[-20px]"
               height={150}
               width={150}
@@ -58,12 +59,12 @@ export default function Header() {
 
                 {/* Home and Blog Links */}
                 <NavigationMenu.List>
-                  <Link href="/" onClick={handleLinkClick} className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                  <Link href="/" onClick={() => handleLinkClick('/')} className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                     Home
                   </Link>
                 </NavigationMenu.List>
                 <NavigationMenu.List>
-                  <Link href="/blog" onClick={handleLinkClick} className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                  <Link href="/blog" onClick={() => handleLinkClick('/blog')} className="menu-scroll inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                     Blog
                   </Link>
                 </NavigationMenu.List>
@@ -89,27 +90,27 @@ export default function Header() {
                     className={`submenu space-y-5 pt-5 transition duration-300 lg:absolute lg:top-[120%] lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443] ${companySubMenuOpen || !isMobile ? 'block' : 'hidden'}`}
                   >
                     <NavigationMenu.Item>
-                      <Link href="/about" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/about" onClick={() => handleLinkClick('/about')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         About
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/about/contact" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/about/contact" onClick={() => handleLinkClick('/about/contact')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Contact
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <NavigationMenu.Link href="/about/career" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <NavigationMenu.Link href="/about/career" onClick={() => handleLinkClick('/about/career')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Career at Denovo
                       </NavigationMenu.Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/about/partnership" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/about/partnership" onClick={() => handleLinkClick('/about/partnership')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Partnership
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/about" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/about" onClick={() => handleLinkClick('/about')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Founded by senior security experts
                       </Link>
                     </NavigationMenu.Item>
@@ -135,27 +136,27 @@ export default function Header() {
                     className={`submenu space-y-5 pt-5 transition duration-300 lg:absolute lg:top-[120%] lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443] ${productsSubMenuOpen || !isMobile ? 'block' : 'hidden'}`}
                   >
                     <NavigationMenu.Item>
-                      <Link href="/products" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/products" onClick={() => handleLinkClick('/products')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Overview
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/products/denovo-core-zero-trust" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/products/denovo-core-zero-trust" onClick={() => handleLinkClick('/products/denovo-core-zero-trust')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Denovo Core Zero Trust
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/products/data-loss-prevention" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/products/data-loss-prevention" onClick={() => handleLinkClick('/products/data-loss-prevention')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Data Loss Prevention
                       </Link>
                     </NavigationMenu.Item>
                      <NavigationMenu.Item>
-                      <Link href="/products/ai-powered-threat-analysis" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/products/ai-powered-threat-analysis" onClick={() => handleLinkClick('/products/ai-powered-threat-analysis')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         AI-powered Threat Analysis
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/products/aa-policy-gen" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/products/aa-policy-gen" onClick={() => handleLinkClick('/products/aa-policy-gen')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         AI-Assisted Policy Gen
                       </Link>
                     </NavigationMenu.Item>
@@ -181,22 +182,22 @@ export default function Header() {
                     className={`submenu space-y-5 pt-5 transition duration-300 lg:absolute lg:top-[120%] lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443] ${resourcesSubMenuOpen || !isMobile ? 'block' : 'hidden'}`}
                   >
                     <NavigationMenu.Item>
-                      <Link href="/papers" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/papers" onClick={() => handleLinkClick('/papers')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Papers
                       </Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <NavigationMenu.Link href="/video-links" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <NavigationMenu.Link href="/video-links" onClick={() => handleLinkClick('/video-links')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Video links
                       </NavigationMenu.Link>
                     </NavigationMenu.Item>
                     <NavigationMenu.Item>
-                      <Link href="/video-links" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/video-links" onClick={() => handleLinkClick('/video-links')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Webinars
                       </Link>
                     </NavigationMenu.Item>
                      <NavigationMenu.Item>
-                      <Link href="/video-links" onClick={handleLinkClick} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
+                      <Link href="/privacy-policy" onClick={() => handleLinkClick('/privacy-policy')} className="inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary">
                         Guidelines
                       </Link>
                     </NavigationMenu.Item>
@@ -208,7 +209,7 @@ export default function Header() {
           </div>
           &nbsp;&nbsp;
           <div className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
-            <Link href="/request_demo" onClick={handleLinkClick} className="w-full whitespace-nowrap rounded bg-primary py-2 px-6 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto">
+            <Link href="/request_demo" onClick={() => handleLinkClick('/request_demo')} className="w-full whitespace-nowrap rounded bg-primary py-2 px-6 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto">
               Request Demo
             </Link>
           </div>
