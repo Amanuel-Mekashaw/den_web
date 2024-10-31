@@ -6,10 +6,9 @@ export default function Contact() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-8 py-16 pt-[160px]">
         <section id="contact" className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Get in Touch</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6"> Whether you have a question, need support, or want to explore partnership opportunities, we’re here to help. </p>
               <div className="space-y-4">
                 <div className="flex items-center">

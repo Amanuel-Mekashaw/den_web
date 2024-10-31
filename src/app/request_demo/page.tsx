@@ -56,7 +56,7 @@ export default function RequestDemo() {
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden">
-      <div className="container mx-auto px-8 py-24 sm:py-36">
+      <div className="container mx-auto px-8 py-26 sm:py-36">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="wow fadeInUp mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-6xl md:leading-8xl"

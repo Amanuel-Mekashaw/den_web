@@ -30,7 +30,7 @@ export default function ContactUsSection() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-blue-500 mr-2" />
-                <span className="text-gray-600 dark:text-gray-400">support@denovosecurity.com</span>
+                <span className="text-gray-600 dark:text-gray-400">admin@denovosecurity.com</span>
               </div>
               {/* <div className="flex items-center">
                 <Phone className="h-5 w-5 text-blue-500 mr-2" />

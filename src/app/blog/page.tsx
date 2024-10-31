@@ -14,7 +14,7 @@ const blogPosts = [
     date: "2024-10-13",
     readTime: 8,
     category: "Artificial Intelligence",
-    image: "./images/blog/the-future-of-ai-in-enterprise-software/ai-software.png",
+    // image: "./images/blog/the-future-of-ai-in-enterprise-software/ai-software.png",
     link: "/blog/the-future-of-ai-in-enterprise-software"
   },
   {
@@ -24,7 +24,7 @@ const blogPosts = [
     Date: "2024-10-14",
     readTime: 5,
     category: "Cybersecurity",
-    image: "./images/blog/casio/casio.png",
+    // image: "./images/blog/casio/casio.png",
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7252328711092334593"
   }
 ]
@@ -53,9 +53,9 @@ export default function BlogSection() {
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Featured Post</h2>
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex">
-              <div className="md:flex-shrink-0">
+              {/* <div className="md:flex-shrink-0">
                 <img className="h-48 w-full object-cover md:w-48" src={blogPosts[0].image} alt={blogPosts[0].title} />
-              </div>
+              </div> */}
               <div className="p-8">
                 <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{blogPosts[0].category}</div>
                 <a href="/blog/the-future-of-ai-in-enterprise-software" className="block mt-1 text-lg leading-tight font-medium text-black dark:text-white hover:underline">{blogPosts[0].title}</a>
@@ -113,7 +113,7 @@ export default function BlogSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredPosts.map((post) => (
             <div key={post.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-              <img className="h-48 w-full object-cover" src={post.image} alt={post.title} />
+              {/* <img className="h-48 w-full object-cover" src={post.image} alt={post.title} /> */}
               <div className="p-6">
                 <div className="flex items-center text-sm font-medium text-indigo-500 mb-1">
                   <Tag className="h-4 w-4 mr-1" />

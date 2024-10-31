@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
             <br /><br />
             Denovo Security
             <br />
-            Email: help@denovosecurity.com
+            Email: admin@denovosecurity.com
             <br />
             {/* Phone: +1(571)260-8781 */}
           </p>
