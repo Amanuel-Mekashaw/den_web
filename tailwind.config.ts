@@ -35,6 +35,7 @@ const config: Config = {
         ebonyClay: "rgba(44, 52, 67, 1)",
         denovoPink: "rgb(76,69,141)",
         denovoDarkblue: "rgb(12,26,53)",
+        denovoYellow: "rgb(252,215,65)",
       },
       screens: {
         sm: "540px",

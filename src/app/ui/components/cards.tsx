@@ -7,9 +7,9 @@ type CardT = {
 export default function Cards({ image, title, href }: CardT) {
   return (
     <div
-      className="card rounded-lg  border-2 shadow-lg
-                    bg-ebony
-                    overflow-hidden text-white 
+      className="card rounded-lg shadow-lg
+                    bg-white
+                    overflow-hidden
                     hover:scale-[105%] transition-transform delay-200 ease-in-out cursor-pointer"
     >
       <div className="flex flex-col items-center px-6 py-8">

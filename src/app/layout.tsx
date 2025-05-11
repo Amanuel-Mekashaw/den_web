@@ -11,7 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DenovoSecurity",
   description: "Denovo Security Website",
-  keywords: ["Denovo Security", "Cybersecurity", "Zero Trust", "data loss prevention", "AI-Powered Threat Analysis", "AI Assisted Policy Generation", "Denovo Core Zero Trust"],
+  keywords: [
+    "Denovo Security",
+    "Cybersecurity",
+    "Zero Trust",
+    "data loss prevention",
+    "AI-Powered Threat Analysis",
+    "AI Assisted Policy Generation",
+    "Denovo Core Zero Trust",
+  ],
   authors: [{ name: "Denovo Security", url: "https://www.denovosecurity.com" }],
   openGraph: {
     title: "DenovoSecurity",
