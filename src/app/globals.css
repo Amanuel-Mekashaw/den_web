@@ -14,10 +14,12 @@
 }
 
 @layer base {
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     @apply border-stroke;
   }
-  
+
   body {
     @apply font-body;
   }

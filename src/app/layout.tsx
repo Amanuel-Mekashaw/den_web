@@ -4,6 +4,8 @@ import "./globals.css";
 import "./animate.css";
 import Header from "./ui/header/page";
 import Footer from "./ui/footer/page";
+import NavBar2 from "./ui/header/navbar2";
+import { Navbar } from "./ui/header/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DenovoSecurity",
   description: "Denovo Security Website",
-  keywords: ["Denovo Security", "Cybersecurity", "Zero Trust", "data loss prevention", "AI-Powered Threat Analysis", "AI Assisted Policy Generation", "Denovo Core Zero Trust"],
+  keywords: [
+    "Denovo Security",
+    "Cybersecurity",
+    "Zero Trust",
+    "data loss prevention",
+    "AI-Powered Threat Analysis",
+    "AI Assisted Policy Generation",
+    "Denovo Core Zero Trust",
+  ],
   authors: [{ name: "Denovo Security", url: "https://www.denovosecurity.com" }],
   openGraph: {
     title: "DenovoSecurity",
@@ -49,7 +59,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className="dark:bg-dark">
         <div>
-          <Header />
+          <Navbar />
           <main>{children}</main>
           <Footer />
         </div>

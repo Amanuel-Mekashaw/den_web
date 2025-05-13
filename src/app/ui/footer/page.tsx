@@ -1,26 +1,30 @@
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
-    return (
-        <footer
-      className="wow fadeInUp pt-14 sm:pt-20 lg:pt-[130px]"
-    >
+  return (
+    <footer className="wow fadeInUp pt-14 sm:pt-20 lg:pt-[130px] bg-gradient-to-r to-[#4C458D] from-[#0C1A35] via-[#0C1A35]">
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap">
-          <div
-            className="w-full px-4 sm:w-1/2 md:w-5/12 lg:w-3/12 xl:w-3/12"
-          >
+          <div className="w-full px-4 sm:w-1/2 md:w-5/12 lg:w-3/12 xl:w-3/12">
             <div className="mb-20 max-w-[330px]">
               <Link href="/" className="mb-6 inline-block">
-                <img
+                {/* <img
                   src="../images/logo/new-logo.png"
                   alt="Denovo Security logo"
+                  className="hidden h-[150px] dark:block"
+                /> */}
+                <Image
+                  src={"/images/logo/new-logo.png"}
+                  width={150}
+                  height={150}
+                  alt="denovo logo"
                   className="hidden h-[150px] dark:block"
                 />
               </Link>
 
               <p className="mb-10 text-base text-dark-text">
-              3301 Richmond Hwy, Alexandria, Virginia 22305, US
+                3301 Richmond Hwy, Alexandria, Virginia 22305, US
               </p>
               <div className="flex items-center space-x-5">
                 {/* <Link
@@ -42,8 +46,8 @@ export default function Footer() {
                 </Link> */}
                 <Link
                   href="https://x.com/DenovoSecurity"
-                  target='_blank'
-                //   name="social-link"
+                  target="_blank"
+                  //   name="social-link"
                   aria-label="social-link"
                   className="text-dark-text hover:text-primary dark:hover:text-white"
                 >
@@ -53,14 +57,16 @@ export default function Footer() {
                     viewBox="0 0 72 72"
                     className="fill-current"
                   >
-                    <path d="M42.5,31.2L66,6h-6L39.8,27.6L24,6H4l24.6,33.6L4,66
-			h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"></path>
+                    <path
+                      d="M42.5,31.2L66,6h-6L39.8,27.6L24,6H4l24.6,33.6L4,66
+			h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"
+                    ></path>
                   </svg>
                 </Link>
                 <Link
                   href="https://www.linkedin.com/company/denovosecurity/"
-                  target='_blank'
-                //   name="social-link"
+                  target="_blank"
+                  //   name="social-link"
                   aria-label="social-link"
                   className="text-dark-text hover:text-primary dark:hover:text-white"
                 >
@@ -70,14 +76,12 @@ export default function Footer() {
                     viewBox="0 0 24 24"
                     className="fill-current"
                   >
-                    <path
-                      d="M6.93994 5.00002C6.93968 5.53046 6.72871 6.03906 6.35345 6.41394C5.97819 6.78883 5.46938 6.99929 4.93894 6.99902C4.40851 6.99876 3.89991 6.78779 3.52502 6.41253C3.15014 6.03727 2.93968 5.52846 2.93994 4.99802C2.94021 4.46759 3.15117 3.95899 3.52644 3.5841C3.9017 3.20922 4.41051 2.99876 4.94094 2.99902C5.47137 2.99929 5.97998 3.21026 6.35486 3.58552C6.72975 3.96078 6.94021 4.46959 6.93994 5.00002ZM6.99994 8.48002H2.99994V21H6.99994V8.48002ZM13.3199 8.48002H9.33994V21H13.2799V14.43C13.2799 10.77 18.0499 10.43 18.0499 14.43V21H21.9999V13.07C21.9999 6.90002 14.9399 7.13002 13.2799 10.16L13.3199 8.48002Z"
-                    />
+                    <path d="M6.93994 5.00002C6.93968 5.53046 6.72871 6.03906 6.35345 6.41394C5.97819 6.78883 5.46938 6.99929 4.93894 6.99902C4.40851 6.99876 3.89991 6.78779 3.52502 6.41253C3.15014 6.03727 2.93968 5.52846 2.93994 4.99802C2.94021 4.46759 3.15117 3.95899 3.52644 3.5841C3.9017 3.20922 4.41051 2.99876 4.94094 2.99902C5.47137 2.99929 5.97998 3.21026 6.35486 3.58552C6.72975 3.96078 6.94021 4.46959 6.93994 5.00002ZM6.99994 8.48002H2.99994V21H6.99994V8.48002ZM13.3199 8.48002H9.33994V21H13.2799V14.43C13.2799 10.77 18.0499 10.43 18.0499 14.43V21H21.9999V13.07C21.9999 6.90002 14.9399 7.13002 13.2799 10.16L13.3199 8.48002Z" />
                   </svg>
                 </Link>
                 <Link
                   href="https://www.instagram.com/"
-                //   name="social-link"
+                  //   name="social-link"
                   aria-label="social-link"
                   className="text-dark-text hover:text-primary dark:hover:text-white"
                 >
@@ -88,7 +92,8 @@ export default function Footer() {
                     className="fill-current"
                   >
                     {/* instagram path */}
-                    <path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path><path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path>
+                    <path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path>
+                    <path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path>
                   </svg>
                 </Link>
               </div>
@@ -97,9 +102,7 @@ export default function Footer() {
 
           <div className="w-1/2 px-4 md:w-3/12 lg:w-3/12 xl:w-2/12">
             <div className="mb-20">
-              <h3
-                className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white"
-              >
+              <h3 className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white">
                 Company
               </h3>
 
@@ -147,9 +150,7 @@ export default function Footer() {
 
           <div className="w-1/2 px-4 md:w-3/12 lg:w-3/12 xl:w-2/12">
             <div className="mb-20">
-              <h3
-                className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white"
-              >
+              <h3 className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white">
                 Products
               </h3>
 
@@ -200,9 +201,7 @@ export default function Footer() {
 
           <div className="w-1/2 px-4 md:w-3/12 lg:w-3/12 xl:w-2/12">
             <div className="mb-20">
-              <h3
-                className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white"
-              >
+              <h3 className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white">
                 Resources
               </h3>
 
@@ -231,9 +230,7 @@ export default function Footer() {
                     Our Web Webinars
                   </Link>
                 </li>
-                <li>
-                </li>
-                
+                <li></li>
               </ul>
             </div>
           </div>
@@ -317,9 +314,7 @@ export default function Footer() {
         <div className="dark:border-[#2E333D] md:border-t">
           <div className="-mx-4 flex flex-wrap py-5 md:py-7">
             <div className="w-full px-4 md:w-1/2 lg:w-2/3">
-              <div
-                className="mb-5 flex items-center justify-center space-x-5 border-b pb-5 dark:border-[#2E333D] md:mb-0 md:justify-start md:border-0 md:pb-0"
-              >
+              <div className="mb-5 flex items-center justify-center space-x-5 border-b pb-5 dark:border-[#2E333D] md:mb-0 md:justify-start md:border-0 md:pb-0">
                 <Link
                   href="/privacy-policy"
                   className="font-heading text-base text-dark-text hover:text-primary"
@@ -336,9 +331,7 @@ export default function Footer() {
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div>
-                <p
-                  className="text-center font-heading text-base text-dark-text lg:text-right"
-                >
+                <p className="text-center font-heading text-base text-dark-text lg:text-right">
                   © 2024 Denovo Security. All rights reserved
                 </p>
               </div>
@@ -347,5 +340,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-    );
+  );
 }
