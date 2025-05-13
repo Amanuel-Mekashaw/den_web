@@ -11,6 +11,7 @@ type SectionT = {
   imageFadeStyle?: string;
   descriptionFadeStyle?: string;
   backgroundGradientTo: "b" | "t" | "l" | "r" | "tr" | "tl" | "br" | "bl";
+  learnMoreHref: string;
 };
 
 type ImageT = {
@@ -23,6 +24,7 @@ type TextContentT = {
   quote?: string;
   description: string;
   descriptionFadeStyle?: string;
+  learnMoreHref: string;
 };
 
 export default function Sections({
@@ -35,6 +37,7 @@ export default function Sections({
   backgroundGradientTo = "b",
   descriptionFadeStyle = "fade-left",
   imageFadeStyle = "fade-right",
+  learnMoreHref,
 }: SectionT) {
   return (
     <section
@@ -59,6 +62,7 @@ export default function Sections({
                 quote={quote}
                 description={description}
                 descriptionFadeStyle={descriptionFadeStyle}
+                learnMoreHref={learnMoreHref}
               />
             </>
           </div>
@@ -77,6 +81,7 @@ export default function Sections({
                 quote={quote}
                 description={description}
                 descriptionFadeStyle={descriptionFadeStyle}
+                learnMoreHref={learnMoreHref}
               />
               <IllustrationImage
                 image={image}
@@ -95,6 +100,7 @@ function TextContent({
   quote,
   description,
   descriptionFadeStyle,
+  learnMoreHref,
 }: TextContentT) {
   return (
     <div className="w-full lg:w-6/12 text-center lg:text-left">
@@ -106,13 +112,32 @@ function TextContent({
         >
           {description}
         </p>
-        <div className="self-center lg:self-start">
-          <Link
-            href="/request_demo"
-            className="w-full text-lg font-semibold whitespace-nowrap rounded bg-denovoYellow py-2 px-6 text-center font-heading text-denovoDarkblue hover:bg-opacity-90 lg:w-auto"
+
+        {/* Learn more button */}
+        <div
+          className="wow fadeInUp flex flex-wrap items-center justify-center lg:justify-start"
+          data-wow-delay=".5s"
+        >
+          <a
+            href={learnMoreHref}
+            className="inline-flex items-center rounded bg-denovoYellow py-[10px] px-6 font-heading text-denovoDarkblue hover:bg-opacity-90 md:py-[14px] md:px-8"
           >
-            Learn More
-          </Link>
+            <span className="font-semibold text-lg">Learn more</span>
+            <span className="pl-3">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 7L6.808 1.636L8.222 0.222L16 8L8.222 15.778L6.808 14.364L12.172 9H0V7H12.172Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </div>

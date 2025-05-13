@@ -1,8 +1,8 @@
 export default function HeroSection() {
   return (
     <>
-      <div className="overflow-hidden hscreen">
-        <div className="absolute inset-0 bg-black/50 z-0 w-full"></div>
+      <div className="relative overflow-hidden lg:px-20">
+        <div className="absolute inset-0 bg-black/70 z-0"></div>
         <img
           className="absolute inset-0 -z-10 w-full h-full object-cover"
           src="./images/hero_image.png"
@@ -10,8 +10,8 @@ export default function HeroSection() {
         />
 
         {/* Hero section Text */}
-        <section id="home" className="overflow-hidden py-20 relative">
-          <div className="px-4 xl:container">
+        <section id="home" className="overflow-hidden py-20 lg:px-20 relative">
+          <div className="xl:container p-0">
             <div className="">
               {/* Hero Text content */}
               <div className="flex flex-col gap-8 mx-auto text-center lg:ml-0 lg:mb-0 lg:text-left z-30">

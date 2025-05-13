@@ -4,6 +4,8 @@ import "./globals.css";
 import "./animate.css";
 import Header from "./ui/header/page";
 import Footer from "./ui/footer/page";
+import NavBar2 from "./ui/header/navbar2";
+import { Navbar } from "./ui/header/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,7 +59,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className="dark:bg-dark">
         <div>
-          <Header />
+          <Navbar />
           <main>{children}</main>
           <Footer />
         </div>

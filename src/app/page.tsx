@@ -36,6 +36,7 @@ export default function Home() {
           image="./images/overview/homepage overview/Denovo Core.drawio (1).png"
           imageAlt="Denovo Core"
           backgroundGradientTo="b"
+          learnMoreHref="#"
         />
 
         <Sections
@@ -48,7 +49,8 @@ export default function Home() {
           image="./images/overview/homepage overview/Denovo Core.drawio (1).png"
           imageAlt="Denovo Trust Core image"
           alternate
-          backgroundGradientTo="l"
+          backgroundGradientTo="br"
+          learnMoreHref="#"
         />
 
         {/* Denovo Architecture */}
