@@ -49,7 +49,7 @@ export default function Home() {
           image="./images/overview/homepage overview/Denovo Core.drawio (1).png"
           imageAlt="Denovo Trust Core image"
           alternate
-          backgroundGradientTo="br"
+          backgroundGradientTo="tl"
           learnMoreHref="#"
         />
 
@@ -74,7 +74,7 @@ export default function Home() {
         className="bg-gradient-to-r from-denovoDarkblue  to-denovoPink
                   py-10 sm:py-32 px-10 relative overflow-hidden"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 auto-cols-fr min-w-[300px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-24 gap-8 auto-cols-fr min-w-[300px]">
           {/* Card 1 */}
           <Cards
             title="AI Assisted Automatic Policy Generation"

@@ -19,7 +19,7 @@ import Image from "next/image";
 export function Navbar() {
   return (
     <div className="hidden w-full items-center justify-between bg-denovoDarkblue px-40 shadow-2xl md:flex">
-      {/* logo */}
+      {/* Logo */}
       <Link href="/">
         <Image
           src="/images/logo/denovo-logo-new.png"
@@ -39,7 +39,7 @@ export function Navbar() {
               <NavigationMenuLink
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "text-white hover:text-denovoYellow text-lg"
+                  "text-white hover:text-denovoYellow text-md"
                 )}
               >
                 Home
@@ -53,7 +53,7 @@ export function Navbar() {
               <NavigationMenuLink
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "text-white hover:text-denovoYellow text-lg"
+                  "text-white hover:text-denovoYellow text-md"
                 )}
               >
                 Blog
@@ -63,7 +63,7 @@ export function Navbar() {
 
           {/* Company */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-white hover:text-denovoYellow text-lg">
+            <NavigationMenuTrigger className="text-white hover:text-denovoYellow text-md">
               Company
             </NavigationMenuTrigger>
             <NavigationMenuContent className="bg-denovoDarkblue">
@@ -74,7 +74,7 @@ export function Navbar() {
                       className="flex h-full w-full select-none flex-col justify-end rounded-md border-denovoPink border-2 bg-denovoDarkblue text-white p-6 no-underline outline-none hover:bg-denovoYellow hover:text-denovoDarkblue focus:shadow-md"
                       href="/"
                     >
-                      <div className="mb-2 mt-4 text-lg font-medium">
+                      <div className="mb-2 mt-4 text-md font-medium">
                         Denovo
                       </div>
                       <p className="text-muted-foreground text-sm leading-tight">
@@ -105,7 +105,7 @@ export function Navbar() {
 
           {/* Products */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-white hover:text-denovoYellow text-lg">
+            <NavigationMenuTrigger className="text-white hover:text-denovoYellow text-md">
               Products
             </NavigationMenuTrigger>
             <NavigationMenuContent className="">

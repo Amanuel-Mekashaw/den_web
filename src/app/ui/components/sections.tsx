@@ -41,7 +41,7 @@ export default function Sections({
 }: SectionT) {
   return (
     <section
-      className={`bg-gradient-to-${backgroundGradientTo} from-denovoDarkblue to-denovoPink px-5 py-16 max-h-fit flex flex-col gap-5 lg:gap-8`}
+      className={`bg-gradient-to-${backgroundGradientTo} from-denovoDarkblue to-denovoPink px-5 lg:px-24 py-16 max-h-fit flex flex-col gap-5 lg:gap-8`}
     >
       {alternate ? (
         <>
@@ -147,7 +147,7 @@ function TextContent({
 function IllustrationImage({ image, imageAlt, imageFadeStyle }: ImageT) {
   return (
     <div
-      className="w-full max-w-[400px] lg:max-w-[600px] lg:mt-0"
+      className="w-full max-w-[400px] lg:max-w-[500px] lg:mt-0"
       data-aos={imageFadeStyle}
     >
       <div className="overflow-hidden border-yellow-400 border-[6px] rounded-[30px] shadow-[8px_10px_0px_rgba(250,204,21,1)]">

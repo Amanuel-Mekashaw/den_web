@@ -6,6 +6,16 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "bg-gradient-to-r",
+    "bg-gradient-to-l",
+    "bg-gradient-to-b",
+    "bg-gradient-to-t",
+    "bg-gradient-to-br",
+    "bg-gradient-to-bl",
+    "bg-gradient-to-tr",
+    "bg-gradient-to-tl",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -59,6 +69,7 @@ const config: Config = {
         },
         backgroundImage: {
           "noise-pattern": "url('../images/NoisePattern.svg')",
+          "paralax-image": "url('../images/hero_image.png')",
         },
         dropShadow: {
           light: "drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1))",
