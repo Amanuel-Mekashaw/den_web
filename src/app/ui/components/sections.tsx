@@ -11,7 +11,7 @@ type SectionT = {
   imageFadeStyle?: string;
   descriptionFadeStyle?: string;
   backgroundGradientTo: "b" | "t" | "l" | "r" | "tr" | "tl" | "br" | "bl";
-  learnMoreHref: string;
+  learnMoreHref?: string;
 };
 
 type ImageT = {
@@ -24,7 +24,7 @@ type TextContentT = {
   quote?: string;
   description: string;
   descriptionFadeStyle?: string;
-  learnMoreHref: string;
+  learnMoreHref?: string;
 };
 
 export default function Sections({
