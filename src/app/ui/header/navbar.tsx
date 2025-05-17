@@ -71,7 +71,7 @@ export function Navbar() {
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
-                      className="flex h-full w-full select-none flex-col justify-end rounded-md border-denovoPink border-2 bg-denovoDarkblue text-white p-6 no-underline outline-none hover:bg-denovoYellow hover:text-denovoDarkblue focus:shadow-md"
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-denovoDarkblue text-white p-6 no-underline outline-none hover:bg-denovoYellow hover:text-denovoDarkblue focus:shadow-md"
                       href="/"
                     >
                       <div className="mb-2 mt-4 text-md font-medium">
@@ -108,11 +108,37 @@ export function Navbar() {
             <NavigationMenuTrigger className="text-white hover:text-denovoYellow text-md">
               Products
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="">
+            <NavigationMenuContent className="bg-denovoDarkblue">
               <ul className="flex w-[350px] flex-col gap-3 bg-darkBlue p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {navLinks.map((link) =>
                   link.submenus?.map((menu) =>
                     link.name === "Products" ? (
+                      <ListItem
+                        key={menu.name}
+                        title={menu.name}
+                        href={menu.link}
+                      >
+                        {/* {link.name} */}
+                      </ListItem>
+                    ) : (
+                      ""
+                    )
+                  )
+                )}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          {/* Resources */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="text-white hover:text-denovoYellow text-md">
+              Resources
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="bg-denovoDarkblue">
+              <ul className="flex w-[350px] flex-col gap-3 bg-darkBlue p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                {navLinks.map((link) =>
+                  link.submenus?.map((menu) =>
+                    link.name === "Resources" ? (
                       <ListItem
                         key={menu.name}
                         title={menu.name}
@@ -135,7 +161,7 @@ export function Navbar() {
       <div className="">
         <Link
           href="/request_demo"
-          className="w-full whitespace-nowrap rounded bg-denovoYellow px-6 py-2 text-center font-heading text-darkBlue hover:bg-opacity-90 lg:w-auto"
+          className="w-full whitespace-nowrap rounded bg-denovoYellow px-6 py-2 text-center font-medium font-heading text-darkBlue hover:bg-opacity-90 lg:w-auto"
         >
           Request Demo
         </Link>

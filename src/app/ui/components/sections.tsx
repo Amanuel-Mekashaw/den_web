@@ -104,10 +104,10 @@ function TextContent({
 }: TextContentT) {
   return (
     <div className="w-full lg:w-6/12 text-center lg:text-left">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         {quote && <p className="text-xl text-white">“{quote}”</p>}
         <p
-          className="text-xl lg:text-2xl leading-10 text-white w-full"
+          className="text-xl lg:text-xl leading-10 text-white w-full"
           data-aos={descriptionFadeStyle}
         >
           {description}
