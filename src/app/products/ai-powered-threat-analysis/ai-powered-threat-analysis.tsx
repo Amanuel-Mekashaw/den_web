@@ -219,16 +219,24 @@ export default function AiThreatAnalysis() {
       </div>
 
       {/* Quoted Section */}
-      <section className="bg-gradient-to-l from-denovoDarkblue via-denovoPink to-denovoPink px-10 py-20 lg:py-28 text-center text-balance flex flex-col items-center gap-5">
-        <h2 className="text-xl text-center font-medium text-white text-balance">
-          “ With its modular, micro-services-driven design, Denovo Trust Horizon
-          allows organizations to adapt quickly to evolving threats and
-          compliance demands, integrating new capabilities without disruption.
-          From deep behavioral insights and AI-powered DLP to inline malware
-          defense and open interoperability, Trust Horizon forms the intelligent
-          backbone of Denovo Security Zero Trust vision — securing every
-          connection, every time. ”
-        </h2>
+      <section className="bg-gradient-to-l from-denovoDarkblue via-denovoPink to-denovoPink px-10 py-20  lg:py-28 flex items-center justify-center">
+        <div className="relative flex flex-col gap-2 px-5 py-10 rounded-lg shadow-xl">
+          <span className="absolute top-3 left-1 text-7xl text-white text-left">
+            ❝
+          </span>
+          <h2 className="pl-5 text-xl text-center text-white leading-8 max-w-[80ch]">
+            With its modular, micro-services-driven design, Denovo Trust Horizon
+            allows organizations to adapt quickly to evolving threats and
+            compliance demands, integrating new capabilities without disruption.
+            From deep behavioral insights and AI-powered DLP to inline malware
+            defense and open interoperability, Trust Horizon forms the
+            intelligent backbone of Denovo Security Zero Trust vision — securing
+            every connection, every time.
+          </h2>
+          <span className="absolute top-[80%] right-1 text-7xl text-white text-left">
+            ❞
+          </span>
+        </div>
       </section>
 
       {/* Call to action */}
