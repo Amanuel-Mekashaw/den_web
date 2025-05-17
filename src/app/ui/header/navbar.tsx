@@ -39,7 +39,7 @@ export function Navbar() {
 
         {/* Navigation links */}
         <NavigationMenu className="flex items-center gap-6">
-          <NavigationMenuList className="flex gap-4">
+          <NavigationMenuList className="flex items-center gap-2">
             {/* Home */}
             <NavigationMenuItem>
               <Link href="/" passHref legacyBehavior>
