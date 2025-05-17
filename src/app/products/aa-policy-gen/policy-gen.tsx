@@ -7,8 +7,7 @@ import "aos/dist/aos.css";
 import "animate.css";
 
 import Sections from "@/app/ui/components/sections";
-import { Car, IconNode, LucideIcon, MenuIcon } from "lucide-react";
-import { twMerge } from "tailwind-merge";
+import { MenuIcon } from "lucide-react";
 import KeyResponsibilityCard from "@/app/ui/components/key-responsibility-card";
 
 export default function PolicyGen() {
@@ -92,26 +91,31 @@ export default function PolicyGen() {
           data-aos="fade-up"
         >
           <KeyResponsibilityCard
+            showIcon
             description="Instant policy propagation to the policy enforcement node (Trust Horizon), 
                         enforcing consistent
                         protection across all traffic and environments."
             icon={MenuIcon}
           />
           <KeyResponsibilityCard
+            showIcon
             description="Integration with third party identity providers for role-based and risk-based 
                         policies tailored to
                         users and organizational needs."
           />
           <KeyResponsibilityCard
+            showIcon
             description="Policy Management Console to easily create and distribute rules, 
                         including access controls, content filtering, DLP, and compliance requirements."
             styleClass="col-span-1 lg:col-span-2 "
           />
           <KeyResponsibilityCard
+            showIcon
             description="Centralized event and log consolidation to streamline trend analysis, compliance audits, and
                         incident investigations, all from one place."
           />
           <KeyResponsibilityCard
+            showIcon
             description="Automated reporting and anomaly indication, making it easier to identify potential risks, optimize
                         policies, and accelerate incident response."
           />
@@ -145,13 +149,23 @@ export default function PolicyGen() {
           data-aos="fade-up"
         >
           <KeyResponsibilityCard
+            showIcon
             description="Dynamic access control, with the ability to challenge users for additional authentication, restrict
                         actions, or block access when risk is detected."
             icon={MenuIcon}
           />
-          <KeyResponsibilityCard description="Micro-segmentation that limits lateral movement, confining attacks to minimal, isolated zones if compromised." />
-          <KeyResponsibilityCard description="Insider threat mitigation through advanced AI-powered monitoring, flagging suspicious behavior in real-time." />
-          <KeyResponsibilityCard description="User-friendly enforcement, ensuring legitimate users are not slowed down when operating within expected, low-risk behaviors." />
+          <KeyResponsibilityCard
+            showIcon
+            description="Micro-segmentation that limits lateral movement, confining attacks to minimal, isolated zones if compromised."
+          />
+          <KeyResponsibilityCard
+            showIcon
+            description="Insider threat mitigation through advanced AI-powered monitoring, flagging suspicious behavior in real-time."
+          />
+          <KeyResponsibilityCard
+            showIcon
+            description="User-friendly enforcement, ensuring legitimate users are not slowed down when operating within expected, low-risk behaviors."
+          />
         </div>
       </div>
 

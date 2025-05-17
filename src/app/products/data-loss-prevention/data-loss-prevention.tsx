@@ -54,14 +54,17 @@ export default function DataLossPreventionComponent() {
             data-aos="fade-up"
           >
             <KeyResponsibilityCard
+              showIcon={false}
               title="Real-Time Monitoring"
               description="Our solution continuously monitors data activity to detect and respond to potential threats immediately, ensuring proactive protection."
             />
             <KeyResponsibilityCard
+              showIcon={false}
               title="Data Classification"
               description="Automatically classify and categorize data based on its sensitivity level, ensuring that appropriate security measures are applied."
             />
             <KeyResponsibilityCard
+              showIcon={false}
               title="Policy Enforcement"
               description="Implement and enforce security policies to control access, usage, and sharing of sensitive data, preventing unauthorized access."
             />
@@ -82,14 +85,17 @@ export default function DataLossPreventionComponent() {
             data-aos="fade-up"
           >
             <KeyResponsibilityCard
+              showIcon
               title="Real-Time Monitoring"
               description="Our solution continuously monitors data activity to detect and respond to potential threats immediately, ensuring proactive protection."
             />
             <KeyResponsibilityCard
+              showIcon
               title="Data Classification"
               description="Automatically classify and categorize data based on its sensitivity level, ensuring that appropriate security measures are applied."
             />
             <KeyResponsibilityCard
+              showIcon
               title="Policy Enforcement"
               description="Implement and enforce security policies to control access, usage, and sharing of sensitive data, preventing unauthorized access."
             />
@@ -110,14 +116,17 @@ export default function DataLossPreventionComponent() {
             data-aos="fade-up"
           >
             <KeyResponsibilityCard
+              showIcon={false}
               title="Compliance"
               description="Ensure your organization meets all relevant data protection regulations, such as GDPR, HIPAA, and CCPA, avoiding hefty fines and legal repercussions."
             />
             <KeyResponsibilityCard
+              showIcon={false}
               title="Data Integrity"
               description="Protect the integrity and confidentiality of your data, ensuring that it remains accurate and unaltered from unauthorized access."
             />
             <KeyResponsibilityCard
+              showIcon={false}
               title="Cost Savings"
               description="Mitigate the financial impact of data breaches by preventing them. Save on costs related to fines, legal actions, and damage to your brand's reputation."
             />

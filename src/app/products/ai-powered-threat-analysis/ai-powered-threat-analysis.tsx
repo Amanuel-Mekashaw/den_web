@@ -99,11 +99,16 @@ export default function AiThreatAnalysis() {
           data-aos="fade-up"
         >
           <KeyResponsibilityCard
+            showIcon
             description="Behavioral analytics and continuous learning from live traffic and administrator feedback."
             icon={MenuIcon}
           />
-          <KeyResponsibilityCard description="Generative AI for semantic detection, analyzing content in context, not just relying on signatures." />
           <KeyResponsibilityCard
+            showIcon
+            description="Generative AI for semantic detection, analyzing content in context, not just relying on signatures."
+          />
+          <KeyResponsibilityCard
+            showIcon
             description="Predictive threat detection through evolving, adaptive models."
             styleClass="col-span-1 lg:col-span-2"
           />
@@ -134,11 +139,16 @@ export default function AiThreatAnalysis() {
           data-aos="fade-up"
         >
           <KeyResponsibilityCard
+            showIcon
             description="Fully aligned with Trust Horizon’s single-pass inspection, ensuring no data escapes unnoticed."
             icon={MenuIcon}
           />
-          <KeyResponsibilityCard description="Inline data protection, from quarantining sensitive emails to blocking unauthorized file uploads." />
           <KeyResponsibilityCard
+            showIcon
+            description="Inline data protection, from quarantining sensitive emails to blocking unauthorized file uploads."
+          />
+          <KeyResponsibilityCard
+            showIcon
             description="Identification of hidden sensitive data within text, file metadata, and behavioral patterns."
             styleClass="col-span-1 lg:col-span-2"
           />
@@ -169,11 +179,16 @@ export default function AiThreatAnalysis() {
           data-aos="fade-up"
         >
           <KeyResponsibilityCard
+            showIcon
             description="Inline malware scanning of all traffic."
             icon={MenuIcon}
           />
-          <KeyResponsibilityCard description="Up-to-date signature detection to block known threats." />
           <KeyResponsibilityCard
+            showIcon
+            description="Up-to-date signature detection to block known threats."
+          />
+          <KeyResponsibilityCard
+            showIcon
             description="Operates as part of the unified inspection flow, with no added overhead."
             styleClass="col-span-1 lg:col-span-2"
           />
@@ -205,16 +220,27 @@ export default function AiThreatAnalysis() {
           data-aos="fade-up"
         >
           <KeyResponsibilityCard
+            showIcon
             description="Connect with SIEM platforms for centralized log aggregation and analysis."
             icon={MenuIcon}
           />
-          <KeyResponsibilityCard description="Integrate with SOAR tools for automated incident response workflows." />
           <KeyResponsibilityCard
+            showIcon
+            description="Integrate with SOAR tools for automated incident response workflows."
+          />
+          <KeyResponsibilityCard
+            showIcon
             description="Import threat intelligence feeds to strengthen Denovo's detection capabilities."
             styleClass="col-span-1 lg:col-span-2"
           />
-          <KeyResponsibilityCard description="Export real-time alerts, risk scores, and incidents to third-party dashboards for deeper analysis." />
-          <KeyResponsibilityCard description="Built on open standards, reducing integration costs and complexity while enhancing agility." />
+          <KeyResponsibilityCard
+            showIcon
+            description="Export real-time alerts, risk scores, and incidents to third-party dashboards for deeper analysis."
+          />
+          <KeyResponsibilityCard
+            showIcon
+            description="Built on open standards, reducing integration costs and complexity while enhancing agility."
+          />
         </div>
       </div>
 

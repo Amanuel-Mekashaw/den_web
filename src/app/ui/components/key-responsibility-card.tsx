@@ -6,6 +6,7 @@ type KeyResponsibilityCardT = {
   description: string;
   icon?: LucideIcon;
   styleClass?: string;
+  showIcon: boolean;
 };
 
 export default function KeyResponsibilityCard({
@@ -13,6 +14,7 @@ export default function KeyResponsibilityCard({
   description,
   icon: Icon,
   styleClass,
+  showIcon,
 }: KeyResponsibilityCardT) {
   return (
     <div
@@ -24,9 +26,12 @@ export default function KeyResponsibilityCard({
         styleClass ? styleClass : ""
       )}
     >
-      <div className="size-14 p-1 rounded-full bg-gray-100 flex justify-center items-center">
-        {Icon && <Icon />}
-      </div>
+      {showIcon && (
+        <div className="size-14 p-1 rounded-full bg-gray-100 flex justify-center items-center">
+          {Icon && <Icon />}
+        </div>
+      )}
+
       {title && <p className="w-full font-bold text-lg text-white">{title}</p>}
       <p className="w-full text-white dark:text-gray-300 text-lg">
         {description}
