@@ -9,6 +9,7 @@ import "animate.css";
 import Sections from "@/app/ui/components/sections";
 import { Car, IconNode, LucideIcon, MenuIcon } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+import KeyResponsibilityCard from "@/app/ui/components/key-responsibility-card";
 
 export default function PolicyGen() {
   useEffect(() => {
@@ -90,27 +91,27 @@ export default function PolicyGen() {
           className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center"
           data-aos="fade-up"
         >
-          <Card
+          <KeyResponsibilityCard
             description="Instant policy propagation to the policy enforcement node (Trust Horizon), 
                         enforcing consistent
                         protection across all traffic and environments."
             icon={MenuIcon}
           />
-          <Card
+          <KeyResponsibilityCard
             description="Integration with third party identity providers for role-based and risk-based 
                         policies tailored to
                         users and organizational needs."
           />
-          <Card
+          <KeyResponsibilityCard
             description="Policy Management Console to easily create and distribute rules, 
                         including access controls, content filtering, DLP, and compliance requirements."
             styleClass="col-span-1 lg:col-span-2 "
           />
-          <Card
+          <KeyResponsibilityCard
             description="Centralized event and log consolidation to streamline trend analysis, compliance audits, and
                         incident investigations, all from one place."
           />
-          <Card
+          <KeyResponsibilityCard
             description="Automated reporting and anomaly indication, making it easier to identify potential risks, optimize
                         policies, and accelerate incident response."
           />
@@ -143,14 +144,14 @@ export default function PolicyGen() {
           className="w-full grid grid-cols-1 gap-5 place-items-center md:grid-cols-2"
           data-aos="fade-up"
         >
-          <Card
+          <KeyResponsibilityCard
             description="Dynamic access control, with the ability to challenge users for additional authentication, restrict
                         actions, or block access when risk is detected."
             icon={MenuIcon}
           />
-          <Card description="Micro-segmentation that limits lateral movement, confining attacks to minimal, isolated zones if compromised." />
-          <Card description="Insider threat mitigation through advanced AI-powered monitoring, flagging suspicious behavior in real-time." />
-          <Card description="User-friendly enforcement, ensuring legitimate users are not slowed down when operating within expected, low-risk behaviors." />
+          <KeyResponsibilityCard description="Micro-segmentation that limits lateral movement, confining attacks to minimal, isolated zones if compromised." />
+          <KeyResponsibilityCard description="Insider threat mitigation through advanced AI-powered monitoring, flagging suspicious behavior in real-time." />
+          <KeyResponsibilityCard description="User-friendly enforcement, ensuring legitimate users are not slowed down when operating within expected, low-risk behaviors." />
         </div>
       </div>
 
@@ -164,7 +165,7 @@ export default function PolicyGen() {
             href="/request_demo"
             className="flex gap-3 font-medium items-center rounded bg-denovoYellow text-denovoDarkblue hover:bg-opacity-90 py-[14px] px-8"
           >
-            <span>Demo on Demand</span>
+            <span>Request a demo</span>
             {/* icons */}
             <span className="">
               <svg
@@ -184,34 +185,5 @@ export default function PolicyGen() {
         </div>
       </section>
     </>
-  );
-}
-
-type CardT = {
-  title?: string;
-  description: string;
-  icon?: LucideIcon;
-  styleClass?: string;
-};
-
-function Card({ title, description, icon: Icon, styleClass }: CardT) {
-  return (
-    <div
-      className={twMerge(
-        "w-full h-full  space-y-3 dark:bg-gray-800 p-10 rounded shadow-md",
-        "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-denovoDarkblue to-denovoPink",
-        "overflow-hidden hover:scale-[105%] transition-all delay-200 ease-in-out cursor-pointer",
-        "shadow-[5px_10px_20px_rgba(0,0,0,0.5)]",
-        styleClass ? styleClass : ""
-      )}
-    >
-      <div className="size-14 p-1 rounded-full bg-gray-100 flex justify-center items-center">
-        {Icon && <Icon />}
-      </div>
-      {title && <p className="w-full font-bold text-lg text-white">{title}</p>}
-      <p className="w-full text-white dark:text-gray-300 text-lg">
-        {description}
-      </p>
-    </div>
   );
 }
